@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahabat Sekolah Dasar SEDALAS | SDN 011 Balikpapan Tengah</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Fredoka"', 'sans-serif'],
+                    },
+                    colors: {
+                        sedalas: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#082f49',
+                        },
+                        borneo: {
+                            amber: '#f59e0b',
+                            emerald: '#10b981',
+                            rose: '#f43f5e',
+                            violet: '#8b5cf6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar & Playful Kid-Friendly Theme */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fef9c3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #38bdf8;
+            border-radius: 9999px;
+            border: 2px solid #fef9c3;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0284c7;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .playful-bg {
+            background-color: #fffdf5;
+            background-image: 
+                linear-gradient(rgba(255, 253, 245, 0.86), rgba(240, 249, 255, 0.90)),
+                url('https://i.ibb.co.com/sLbnBsF/Gemini-Generated-Image-32vg8632vg8632vg.jpg'),
+                url('https://i.ibb.co/sLbnBsF/Gemini-Generated-Image-32vg8632vg8632vg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .hero-pattern {
+            background-image: 
+                linear-gradient(135deg, rgba(8, 47, 73, 0.78) 0%, rgba(2, 132, 199, 0.70) 50%, rgba(16, 185, 129, 0.72) 100%),
+                url('https://i.ibb.co.com/sLbnBsF/Gemini-Generated-Image-32vg8632vg8632vg.jpg'),
+                url('https://i.ibb.co/sLbnBsF/Gemini-Generated-Image-32vg8632vg8632vg.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.18), 0 8px 10px -6px rgba(14, 165, 233, 0.1);
+        }
+        .btn-3d {
+            transition: all 0.15s ease;
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18);
+        }
+        .btn-3d:active {
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.18);
+        }
+        .active-tab {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+            color: white !important;
+            border-color: #ea580c !important;
+            box-shadow: 0 6px 0 0 #c2410c, 0 12px 20px -3px rgba(249, 115, 22, 0.35) !important;
+            transform: translateY(-2px);
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(3deg); }
+        }
+        .float-anim {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="playful-bg text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900">
+
+    <!-- Top Announcement Bar (Cheerful Rainbow Strip) -->
+    <div class="bg-gradient-to-r from-amber-400 via-rose-400 to-sky-400 text-slate-950 text-xs sm:text-sm py-2.5 px-4 border-b-2 border-amber-500/30">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="bg-white text-rose-600 font-display font-bold px-3 py-0.5 rounded-full text-xs shadow-sm">🌟 PORTOFOLIO CERIA 2026</span>
+                <span class="font-bold text-slate-900">Sahabat Sekolah Dasar — SDN 011 Balikpapan Tengah (SEDALAS)</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-4 text-slate-900 font-bold text-xs">
+                <span class="bg-white/60 px-2.5 py-0.5 rounded-full">📍 Kec. Balikpapan Tengah</span>
+                <span class="bg-white/60 px-2.5 py-0.5 rounded-full">🎬 43 Aksi & Video Siap Tonton!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 glass-nav border-b-4 border-amber-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Brand Identity -->
+                <a href="#" onclick="switchMenu('semua'); return false;" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white p-1 flex items-center justify-center shadow-md border-2 border-amber-300 group-hover:rotate-6 transition-transform overflow-hidden">
+                        <img 
+                            src="https://i.ibb.co.com/Gv45mJnN/Desain-tanpa-judul.png" 
+                            onerror="if(this.src !== 'https://i.ibb.co/Gv45mJnN/Desain-tanpa-judul.png'){this.src='https://i.ibb.co/Gv45mJnN/Desain-tanpa-judul.png';}else{this.src='https://placehold.co/100x100/f59e0b/ffffff?text=SEDALAS';}" 
+                            alt="Logo Sahabat SD SEDALAS" 
+                            class="w-full h-full object-contain"
+                        >
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-1.5">
+                            <span class="font-display font-bold text-lg sm:text-2xl tracking-tight text-sky-700">Sahabat SD</span>
+                            <span class="bg-amber-300 text-slate-900 font-display font-bold text-xs sm:text-sm px-2.5 py-0.5 rounded-full border-2 border-amber-400 shadow-sm">SEDALAS ✨</span>
+                        </div>
+                        <p class="text-xs text-slate-600 font-bold">SD Negeri 011 Balikpapan Tengah</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden xl:flex items-center space-x-2">
+                    <button onclick="switchMenu('semua')" id="nav-semua" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-slate-100 hover:bg-amber-100 border-2 border-slate-200 transition-all flex items-center space-x-1.5 active-tab">
+                        <span>🌈</span>
+                        <span>Semua (43)</span>
+                    </button>
+                    <button onclick="switchMenu('pembiasaan')" id="nav-pembiasaan" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-200 transition-all flex items-center space-x-1.5">
+                        <span>🌱</span>
+                        <span>Pembiasaan Karakter</span>
+                    </button>
+                    <button onclick="switchMenu('permainan')" id="nav-permainan" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-violet-50 hover:bg-violet-100 border-2 border-violet-200 transition-all flex items-center space-x-1.5">
+                        <span>🎲</span>
+                        <span>Permainan Edukasi</span>
+                    </button>
+                    <button onclick="switchMenu('wisata')" id="nav-wisata" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-amber-50 hover:bg-amber-100 border-2 border-amber-200 transition-all flex items-center space-x-1.5">
+                        <span>🏝️</span>
+                        <span>Wisata Balikpapan</span>
+                    </button>
+                    <button onclick="switchMenu('kegiatan')" id="nav-kegiatan" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-sky-50 hover:bg-sky-100 border-2 border-sky-200 transition-all flex items-center space-x-1.5">
+                        <span>🏆</span>
+                        <span>Kegiatan Sekolah</span>
+                    </button>
+                    <button onclick="switchMenu('rukun')" id="nav-rukun" class="nav-btn px-3.5 py-2 rounded-2xl text-xs font-display font-bold text-slate-700 bg-rose-50 hover:bg-rose-100 border-2 border-rose-200 transition-all flex items-center space-x-1.5">
+                        <span>🤗</span>
+                        <span>Rukun Sama Teman</span>
+                    </button>
+                </nav>
+
+                <!-- Interactive Sim Button & Mobile Hamburger -->
+                <div class="flex items-center space-x-2">
+                    <button onclick="openQuizModal()" class="btn-3d bg-gradient-to-r from-amber-400 to-yellow-300 hover:from-amber-500 hover:to-yellow-400 text-slate-950 font-display font-bold text-xs sm:text-sm px-4 py-2.5 rounded-2xl border-2 border-amber-500 transition-all flex items-center space-x-1.5">
+                        <span class="text-base">🎮</span>
+                        <span class="hidden sm:inline">Kuis Seru!</span>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="xl:hidden p-2.5 rounded-2xl bg-amber-100 text-amber-900 border-2 border-amber-300 hover:bg-amber-200 focus:outline-none" aria-label="Menu">
+                        <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b-4 border-amber-300 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="switchMenu('semua'); toggleMobileMenu();" id="mnav-semua" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold flex items-center justify-between active-tab">
+                <span>🌈 Semua Program Ceria</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-white/30">43</span>
+            </button>
+            <button onclick="switchMenu('pembiasaan'); toggleMobileMenu();" id="mnav-pembiasaan" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold text-slate-700 bg-emerald-50 border-2 border-emerald-200 flex items-center justify-between">
+                <span>🌱 Program Pembiasaan Karakter</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-200 text-emerald-900">15</span>
+            </button>
+            <button onclick="switchMenu('permainan'); toggleMobileMenu();" id="mnav-permainan" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold text-slate-700 bg-violet-50 border-2 border-violet-200 flex items-center justify-between">
+                <span>🎲 Permainan Edukasi</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-violet-200 text-violet-900">7</span>
+            </button>
+            <button onclick="switchMenu('wisata'); toggleMobileMenu();" id="mnav-wisata" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold text-slate-700 bg-amber-50 border-2 border-amber-200 flex items-center justify-between">
+                <span>🏝️ Promosi Wisata Balikpapan</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-200 text-amber-900">3</span>
+            </button>
+            <button onclick="switchMenu('kegiatan'); toggleMobileMenu();" id="mnav-kegiatan" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold text-slate-700 bg-sky-50 border-2 border-sky-200 flex items-center justify-between">
+                <span>🏆 Kegiatan Sekolah Penumbuh Karakter</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-sky-200 text-sky-900">13</span>
+            </button>
+            <button onclick="switchMenu('rukun'); toggleMobileMenu();" id="mnav-rukun" class="mnav-btn w-full text-left px-4 py-3 rounded-2xl text-sm font-display font-bold text-slate-700 bg-rose-50 border-2 border-rose-200 flex items-center justify-between">
+                <span>🤗 Rukun Sama Teman</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-rose-200 text-rose-900">5</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section (Cheerful Kid Adventure Theme) -->
+    <section class="hero-pattern text-white relative overflow-hidden border-b-8 border-amber-300">
+        <!-- Decorative Floating Kid Icons -->
+        <div class="hidden lg:block absolute top-8 right-12 text-5xl opacity-30 float-anim pointer-events-none">🎨</div>
+        <div class="hidden lg:block absolute bottom-10 left-10 text-5xl opacity-30 float-anim pointer-events-none" style="animation-delay: 1.5s;">🚀</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Left Column: Hero Text -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="inline-flex items-center space-x-2 bg-white/25 backdrop-blur-md border-2 border-white/50 rounded-full px-4 py-1.5 text-xs sm:text-sm text-white font-display font-bold shadow-sm">
+                        <span class="text-base">✨</span>
+                        <span>Petualangan Seru Anak Hebat SDN 011 Balikpapan Tengah!</span>
+                    </div>
+                    <h1 class="font-display font-bold text-3xl sm:text-5xl lg:text-6xl leading-tight drop-shadow-sm">
+                        Sahabat Sekolah Dasar <span class="text-amber-300 underline decoration-wavy decoration-rose-400">SEDALAS</span> 🌈
+                    </h1>
+                    <p class="text-white/95 text-base sm:text-lg leading-relaxed max-w-2xl font-medium bg-sky-900/20 p-4 rounded-2xl border border-white/20">
+                        Halo Teman-Teman! 👋 Yuk intip keseruan kami di <strong>SD Negeri 011 Balikpapan Tengah</strong> dalam menjalankan <strong>7 Kebiasaan Anak Indonesia Hebat (7 KAIH)</strong>, bermain sambil belajar, menjelajahi wisata Kota Balikpapan, dan selalu rukun bersama teman!
+                    </p>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="flex flex-wrap gap-3.5 pt-1">
+                        <a href="#jelajah-menu" class="btn-3d bg-amber-400 hover:bg-amber-300 text-slate-950 font-display font-bold px-6 py-3.5 rounded-2xl border-2 border-white transition-all flex items-center space-x-2 text-sm sm:text-base">
+                            <span class="text-xl">🧭</span>
+                            <span>Mulai Petualangan 5 Menu!</span>
+                        </a>
+                        <button onclick="openVideoModal(19, 0)" class="btn-3d bg-rose-500 hover:bg-rose-400 text-white font-display font-bold px-5 py-3.5 rounded-2xl border-2 border-white transition-all flex items-center space-x-2 text-sm sm:text-base">
+                            <span class="text-xl">🍿</span>
+                            <span>Bioskop Cilik SEDALAS</span>
+                        </button>
+                        <button onclick="openCaturModal()" class="btn-3d bg-white/20 hover:bg-white/30 border-2 border-white/60 text-white font-display font-bold px-5 py-3.5 rounded-2xl backdrop-blur-sm transition-all flex items-center space-x-2 text-sm sm:text-base">
+                            <span class="text-xl">🤝</span>
+                            <span>4 Sahabat Pendukung</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Stats & Highlights Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 border-4 border-amber-300 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-5 relative">
+                        <div class="flex items-center justify-between border-b-2 border-dashed border-slate-200 pb-4">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-3xl">🏅</span>
+                                <div>
+                                    <h2 class="font-display font-bold text-xl text-sky-800">Papan Bintang SEDALAS</h2>
+                                    <p class="text-xs text-slate-500 font-bold">Semua Video Bisa Diputar Langsung di Web!</p>
+                                </div>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 border-2 border-emerald-300 text-xs font-display font-bold px-3 py-1 rounded-full">
+                                ⭐ 100% Hebat
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3.5">
+                            <div class="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 text-center">
+                                <div class="text-2xl mb-1">🎉</div>
+                                <div class="text-amber-600 text-2xl sm:text-3xl font-display font-bold">43 Aksi</div>
+                                <div class="text-xs text-slate-600 font-bold mt-0.5">Kegiatan Seru & Kreatif</div>
+                            </div>
+                            <div class="bg-emerald-50 border-2 border-emerald-200 rounded-2xl p-4 text-center">
+                                <div class="text-2xl mb-1">🗺️</div>
+                                <div class="text-emerald-600 text-2xl sm:text-3xl font-display font-bold">5 Menu</div>
+                                <div class="text-xs text-slate-600 font-bold mt-0.5">Petualangan Karakter</div>
+                            </div>
+                            <div class="bg-sky-50 border-2 border-sky-200 rounded-2xl p-4 text-center">
+                                <div class="text-2xl mb-1">👨‍👩‍👧‍👦</div>
+                                <div class="text-sky-600 text-2xl sm:text-3xl font-display font-bold">4 Pusat</div>
+                                <div class="text-xs text-slate-600 font-bold mt-0.5">Sekolah, Rumah, Warga, Media</div>
+                            </div>
+                            <div class="bg-rose-50 border-2 border-rose-200 rounded-2xl p-4 text-center">
+                                <div class="text-2xl mb-1">🎬</div>
+                                <div class="text-rose-600 text-2xl sm:text-3xl font-display font-bold">45 Video</div>
+                                <div class="text-xs text-slate-600 font-bold mt-0.5">Pratinjau Tanpa Pindah Tab</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-sky-100 to-emerald-100 rounded-2xl p-3.5 flex items-center space-x-3 border-2 border-sky-200">
+                            <div class="w-11 h-11 rounded-2xl bg-white flex items-center justify-center shrink-0 text-2xl shadow-sm">
+                                🦸‍♂️
+                            </div>
+                            <p class="text-xs text-slate-700 leading-relaxed font-medium">
+                                <strong>Aksi Sahabat SD:</strong> Menjadi kapten permainan kartu, pemeriksa bekal sehat, pemandu vlog wisata, dan sahabat penenang adik kelas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Interactive Portfolio Container -->
+    <main id="jelajah-menu" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+
+        <!-- Category Menu Selector Pills (5 Menus + Semua) -->
+        <div class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h2 class="font-display font-bold text-2xl sm:text-3xl text-sky-900 flex items-center space-x-2.5">
+                    <span class="text-3xl">🎠</span>
+                    <span>Pilih Menu Petualangan SEDALAS</span>
+                </h2>
+                <span class="text-xs sm:text-sm font-bold text-amber-800 bg-amber-100 border border-amber-300 px-3.5 py-1.5 rounded-full">
+                    👆 Klik salah satu menu untuk membaca cerita singkat & menonton videonya!
+                </span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                <button onclick="switchMenu('semua')" id="card-tab-semua" class="tab-card btn-3d p-4 rounded-3xl border-2 border-slate-300 bg-white text-left transition-all flex flex-col justify-between active-tab">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🌈</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800">43</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug">Semua Program SEDALAS</div>
+                </button>
+
+                <button onclick="switchMenu('pembiasaan')" id="card-tab-pembiasaan" class="tab-card btn-3d p-4 rounded-3xl border-2 border-emerald-300 bg-emerald-50/80 hover:bg-emerald-100 text-left transition-all flex flex-col justify-between">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🌱</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-emerald-200 text-emerald-900">15</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug text-emerald-950">Program Pembiasaan Karakter</div>
+                </button>
+
+                <button onclick="switchMenu('permainan')" id="card-tab-permainan" class="tab-card btn-3d p-4 rounded-3xl border-2 border-violet-300 bg-violet-50/80 hover:bg-violet-100 text-left transition-all flex flex-col justify-between">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🎲</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-violet-200 text-violet-900">7</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug text-violet-950">Permainan Edukasi</div>
+                </button>
+
+                <button onclick="switchMenu('wisata')" id="card-tab-wisata" class="tab-card btn-3d p-4 rounded-3xl border-2 border-amber-300 bg-amber-50/80 hover:bg-amber-100 text-left transition-all flex flex-col justify-between">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🏝️</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-amber-200 text-amber-900">3</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug text-amber-950">Promosi Wisata Balikpapan</div>
+                </button>
+
+                <button onclick="switchMenu('kegiatan')" id="card-tab-kegiatan" class="tab-card btn-3d p-4 rounded-3xl border-2 border-sky-300 bg-sky-50/80 hover:bg-sky-100 text-left transition-all flex flex-col justify-between">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🏆</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-sky-200 text-sky-900">13</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug text-sky-950">Kegiatan Sekolah Penumbuh Karakter</div>
+                </button>
+
+                <button onclick="switchMenu('rukun')" id="card-tab-rukun" class="tab-card btn-3d p-4 rounded-3xl border-2 border-rose-300 bg-rose-50/80 hover:bg-rose-100 text-left transition-all flex flex-col justify-between">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <span class="text-2xl">🤗</span>
+                        <span class="text-xs font-display font-bold px-2.5 py-0.5 rounded-full bg-rose-200 text-rose-900">5</span>
+                    </div>
+                    <div class="font-display font-bold text-sm sm:text-base leading-snug text-rose-950">Rukun Sama Teman</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Dynamic 1-Paragraph Menu Explanation Card (Sesuai Dokumen PDF) -->
+        <div id="menu-explanation-banner" class="bg-white rounded-3xl border-4 border-sky-300 shadow-lg p-6 sm:p-8 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-start gap-5 relative z-10">
+                <div id="menu-icon-box" class="w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-sky-100 text-sky-600 border-2 border-sky-300 flex items-center justify-center shrink-0 text-3xl sm:text-4xl shadow-sm">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="space-y-2.5 flex-1">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span id="menu-badge" class="text-xs font-display font-bold uppercase tracking-wider px-3.5 py-1 rounded-full bg-sky-100 text-sky-800 border border-sky-300">
+                            Ikhtisar Portofolio SEDALAS
+                        </span>
+                        <span id="menu-count-badge" class="text-xs font-display font-bold text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
+                            Menampilkan 43 Kegiatan
+                        </span>
+                    </div>
+                    <h3 id="menu-title" class="font-display font-bold text-2xl sm:text-3xl text-slate-900">
+                        Portofolio Lengkap Sahabat Sekolah Dasar SEDALAS
+                    </h3>
+                    <!-- 1 Paragraph Explanation strictly aligned with the PDF document -->
+                    <p id="menu-paragraph" class="text-slate-700 text-sm sm:text-base leading-relaxed text-justify font-medium bg-slate-50/80 p-4 rounded-2xl border border-slate-200">
+                        Portofolio Sahabat Sekolah Dasar SEDALAS di SD Negeri 011 Balikpapan Tengah merangkum 43 aksi nyata kolaboratif yang mengintegrasikan program pembiasaan karakter harian, permainan edukasi interaktif, promosi wisata dan kearifan lokal Kota Balikpapan, kegiatan sekolah penumbuh karakter, serta budaya rukun sama teman. Seluruh rangkaian kegiatan ini dilaksanakan secara berkesinambungan melalui sinergi Catur Pusat Pendidikan—yang melibatkan Sekolah, Keluarga, Masyarakat/Mitra Pemerintah, dan Media—dengan menempatkan murid Sahabat Sekolah Dasar sebagai teladan sebaya, penggerak positif, dan duta sekolah ramah anak.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Catur Pusat Filter Bar -->
+        <div class="bg-white p-4 sm:p-5 rounded-3xl border-4 border-amber-200 shadow-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+            <!-- Search Input -->
+            <div class="relative flex-1">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-lg">🔍</span>
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    oninput="handleSearchAndFilter()"
+                    placeholder="Ketik kata kunci kegiatan (contoh: Bekal, Batik, Game, Rista, Imunisasi)..." 
+                    class="w-full pl-12 pr-10 py-3 rounded-2xl bg-amber-50/50 border-2 border-amber-200 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white transition-all"
+                >
+                <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-rose-500 p-1">
+                    <i class="fa-solid fa-circle-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Filter by Catur Pusat Pendidikan -->
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="text-xs font-display font-bold text-slate-600 mr-1">🤝 Filter Sahabat Pendukung:</span>
+                <select id="catur-filter" onchange="handleSearchAndFilter()" class="bg-sky-50 border-2 border-sky-200 text-sky-900 text-xs sm:text-sm font-display font-bold rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer">
+                    <option value="all">🌟 Semua Unsur Catur Pusat</option>
+                    <option value="Sekolah">🏫 Sekolah (Guru, Murid, Tendik)</option>
+                    <option value="Keluarga">🏡 Keluarga (Orang Tua / Paguyuban)</option>
+                    <option value="Masyarakat">🏛️ Masyarakat & Mitra Pemerintah</option>
+                    <option value="Media">📱 Media & Platform Digital</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Program Cards Grid -->
+        <div id="programs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rendered dynamically via JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden bg-white rounded-3xl border border-slate-200 p-12 text-center max-w-lg mx-auto my-8">
+            <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-folder-open"></i>
+            </div>
+            <h4 class="font-display font-bold text-lg text-slate-800">Kegiatan Tidak Ditemukan</h4>
+            <p class="text-sm text-slate-500 mt-1 mb-5">Tidak ada kegiatan yang cocok dengan kata kunci pencarian atau filter Anda.</p>
+            <button onclick="resetAllFilters()" class="bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all">
+                Tampilkan Semua Kegiatan
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Interactive Spotlight Section: 7 KAIH & Peran Murid Sahabat SD -->
+    <section class="bg-slate-900 text-white py-14 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-6">
+                <div>
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Keunggulan Ekosistem SEDALAS</span>
+                    <h2 class="font-display font-bold text-2xl sm:text-3xl mt-1">Mengapa Program Sahabat SD SEDALAS Berdampak Nyata?</h2>
+                </div>
+                <button onclick="openQuizModal()" class="self-start md:self-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Uji Pemahaman Sahabat SD</span>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/70 border border-slate-700/80 rounded-3xl p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white">Kepemimpinan Teman Sebaya (Peer Modeling)</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Murid Sahabat SD tidak hanya menjadi objek, melainkan subjek aktif: menjadi narator video 7 KAIH, memandu meja permainan kartu, memeriksa kelengkapan bekal sehat, hingga menenangkan adik kelas saat imunisasi BIAS.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/70 border border-slate-700/80 rounded-3xl p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white">Solusi Kontekstual & Inovatif</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Setiap tantangan di lapangan diatasi secara kreatif—mulai dari sistem <em>rotational station</em> 15 menit untuk kartu permainan, pemanfaatan koridor bertingkat untuk simulasi bus aman, hingga penyediaan kartu kendali fisik bagi murid tanpa gawai.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/70 border border-slate-700/80 rounded-3xl p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white">Kolaborasi Utuh Catur Pusat</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Melibatkan guru & tendik, paguyuban orang tua seluruh rombel, Puskesmas Balikpapan Tengah & Sumber Rejo, DLH/Bank Sampah, Babinsa/Bhabinkamtibmas, Karang Taruna, TBM, hingga BPMP Provinsi Kalimantan Timur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800/80 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-sm border border-amber-300 overflow-hidden shrink-0">
+                    <img 
+                        src="https://i.ibb.co.com/Gv45mJnN/Desain-tanpa-judul.png" 
+                        onerror="if(this.src !== 'https://i.ibb.co/Gv45mJnN/Desain-tanpa-judul.png'){this.src='https://i.ibb.co/Gv45mJnN/Desain-tanpa-judul.png';}else{this.src='https://placehold.co/100x100/f59e0b/ffffff?text=SD';}" 
+                        alt="Logo Sahabat SD SEDALAS" 
+                        class="w-full h-full object-contain"
+                    >
+                </div>
+                <div>
+                    <div class="font-bold text-white">Sahabat Sekolah Dasar SEDALAS</div>
+                    <div class="text-xs text-slate-500">SD Negeri 011 Balikpapan Tengah • Kota Balikpapan, Kalimantan Timur</div>
+                </div>
+            </div>
+            <div class="text-center sm:text-right text-xs text-slate-500">
+                Portofolio Digital Implementasi Program Sahabat Sekolah Dasar 2026.<br>
+                Disusun berdasarkan Dokumen Resmi 43 Kegiatan SEDALAS.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: Activity Detail Modal -->
+    <div id="detail-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl border border-slate-200 my-8 animate-fadeIn">
+            <!-- Modal Header -->
+            <div id="modal-header-bg" class="p-6 sm:p-7 text-white relative">
+                <button onclick="closeDetailModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-black/20 hover:bg-black/40 text-white flex items-center justify-center transition-all" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="flex items-center space-x-2 mb-2">
+                    <span id="modal-no-badge" class="bg-white/20 backdrop-blur-sm px-3 py-0.5 rounded-full text-xs font-bold">Kegiatan #1</span>
+                    <span id="modal-cat-badge" class="bg-black/20 px-3 py-0.5 rounded-full text-xs font-semibold">Kategori</span>
+                </div>
+                <h3 id="modal-title" class="font-display font-bold text-2xl sm:text-3xl leading-snug pr-8">Nama Kegiatan</h3>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 sm:p-7 space-y-5 max-h-[75vh] overflow-y-auto">
+                <!-- Embedded Video Player Section inside Detail Modal -->
+                <div class="bg-gradient-to-br from-rose-50 via-amber-50 to-sky-50 rounded-3xl p-4 sm:p-5 border-2 border-rose-200 shadow-inner">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <h4 class="text-sm font-display font-bold text-rose-800 flex items-center">
+                            <span class="text-xl mr-2">🍿</span> Pratinjau Video Dokumentasi Langsung di Web
+                        </h4>
+                        <div id="modal-reel-switcher" class="flex flex-wrap gap-1.5">
+                            <!-- Reel switcher buttons if multiple reels exist -->
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                        <div class="lg:col-span-7 bg-slate-900 rounded-2xl overflow-hidden border-4 border-white shadow-md relative min-h-[420px] flex items-center justify-center">
+                            <iframe 
+                                id="modal-video-iframe" 
+                                src="" 
+                                class="w-full h-[440px] border-0 bg-white"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                allowfullscreen
+                                loading="lazy"
+                                title="Pratinjau Video Dokumentasi SEDALAS">
+                            </iframe>
+                        </div>
+                        <div class="lg:col-span-5 space-y-3 text-left">
+                            <div class="bg-white/90 rounded-2xl p-4 border border-amber-200 space-y-2">
+                                <span class="inline-block text-xs font-display font-bold bg-amber-100 text-amber-900 px-3 py-1 rounded-full">
+                                    🎬 Tonton Tanpa Pindah Tab!
+                                </span>
+                                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                    Klik tombol <strong>Putar (Play)</strong> pada layar video di samping untuk menonton aksi seru teman-teman Sahabat SD SEDALAS secara langsung di halaman ini.
+                                </p>
+                            </div>
+                            <div id="modal-links" class="flex flex-col gap-2">
+                                <!-- Optional backup link if needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deskripsi Pelaksanaan -->
+                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200/80">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-1.5 flex items-center">
+                        <i class="fa-solid fa-clipboard-list mr-2 text-sky-600"></i> Deskripsi Singkat Pelaksanaan Kegiatan
+                    </h4>
+                    <p id="modal-desc" class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium"></p>
+                </div>
+
+                <!-- Grid: Hal yang Berjalan Baik & Peran Sahabat SD -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-emerald-50/70 rounded-2xl p-4 border border-emerald-200">
+                        <h4 class="text-xs font-extrabold uppercase tracking-wider text-emerald-800 mb-1.5 flex items-center">
+                            <i class="fa-solid fa-circle-check mr-2 text-emerald-600"></i> Hal yang Berjalan dengan Baik
+                        </h4>
+                        <p id="modal-good" class="text-slate-700 text-sm leading-relaxed"></p>
+                    </div>
+
+                    <div class="bg-amber-50/80 rounded-2xl p-4 border border-amber-200">
+                        <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-900 mb-1.5 flex items-center">
+                            <i class="fa-solid fa-user-astronaut mr-2 text-amber-600"></i> Peran Murid Sahabat SD
+                        </h4>
+                        <p id="modal-role" class="text-slate-700 text-sm leading-relaxed font-medium"></p>
+                    </div>
+                </div>
+
+                <!-- Tantangan & Solusi -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-rose-50/70 rounded-2xl p-4 border border-rose-200">
+                        <h4 class="text-xs font-extrabold uppercase tracking-wider text-rose-800 mb-1.5 flex items-center">
+                            <i class="fa-solid fa-triangle-exclamation mr-2 text-rose-600"></i> Tantangan yang Dihadapi
+                        </h4>
+                        <p id="modal-challenge" class="text-slate-700 text-sm leading-relaxed"></p>
+                    </div>
+
+                    <div class="bg-sky-50/70 rounded-2xl p-4 border border-sky-200">
+                        <h4 class="text-xs font-extrabold uppercase tracking-wider text-sky-800 mb-1.5 flex items-center">
+                            <i class="fa-solid fa-wand-magic-sparkles mr-2 text-sky-600"></i> Solusi yang Dilakukan
+                        </h4>
+                        <p id="modal-solution" class="text-slate-700 text-sm leading-relaxed"></p>
+                    </div>
+                </div>
+
+                <!-- Pembelajaran Bermakna -->
+                <div class="bg-violet-50/70 rounded-2xl p-4 border border-violet-200">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-violet-900 mb-1.5 flex items-center">
+                        <i class="fa-solid fa-lightbulb mr-2 text-violet-600"></i> Pengalaman & Pembelajaran Paling Bermakna bagi Murid
+                    </h4>
+                    <p id="modal-learning" class="text-slate-800 text-sm sm:text-base leading-relaxed italic"></p>
+                </div>
+
+                <!-- Catur Pusat & Dokumentasi -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-slate-400 block mb-1">Keterlibatan Catur Pusat Pendidikan:</span>
+                        <p id="modal-catur" class="text-xs sm:text-sm font-semibold text-slate-700"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Dedicated Kids Cinema Video Preview Modal (Bioskop Cilik SEDALAS) -->
+    <div id="video-preview-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border-4 border-amber-400 my-6">
+            <!-- Cinema Header -->
+            <div class="bg-gradient-to-r from-rose-500 via-amber-500 to-sky-500 p-4 sm:p-5 text-white flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-11 h-11 rounded-2xl bg-white text-rose-500 flex items-center justify-center text-2xl shadow-sm">
+                        🍿
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span id="cinema-badge" class="bg-white/25 text-white text-xs font-display font-bold px-2.5 py-0.5 rounded-full">Bioskop Cilik SEDALAS</span>
+                        </div>
+                        <h3 id="cinema-title" class="font-display font-bold text-lg sm:text-2xl leading-tight">Pratinjau Video Kegiatan</h3>
+                    </div>
+                </div>
+                <button onclick="closeVideoModal()" class="w-10 h-10 rounded-2xl bg-white/20 hover:bg-white/40 text-white flex items-center justify-center text-lg transition-all" aria-label="Tutup Video">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Cinema Body -->
+            <div class="p-5 sm:p-6 bg-amber-50/40 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <!-- Video Player Frame -->
+                <div class="lg:col-span-7 bg-slate-900 rounded-3xl overflow-hidden border-4 border-amber-300 shadow-xl">
+                    <iframe 
+                        id="cinema-iframe" 
+                        src="" 
+                        class="w-full h-[470px] sm:h-[520px] border-0 bg-white"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                        allowfullscreen
+                        title="Bioskop Cilik SEDALAS">
+                    </iframe>
+                </div>
+
+                <!-- Activity Story & Reel Switcher -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div id="cinema-switcher-box" class="hidden bg-white p-3.5 rounded-2xl border-2 border-amber-200 space-y-2">
+                        <div class="text-xs font-display font-bold text-slate-600">🎞️ Pilih Bagian Video (Reels):</div>
+                        <div id="cinema-reel-buttons" class="flex flex-wrap gap-2"></div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-2xl border-2 border-sky-200 space-y-2 shadow-sm">
+                        <div class="text-xs font-display font-bold uppercase text-sky-700 flex items-center space-x-1.5">
+                            <span>📖</span>
+                            <span>Cerita Singkat Kegiatan:</span>
+                        </div>
+                        <p id="cinema-desc" class="text-xs sm:text-sm text-slate-700 leading-relaxed"></p>
+                    </div>
+
+                    <div class="bg-amber-100/80 p-4 rounded-2xl border-2 border-amber-300 space-y-1.5">
+                        <div class="text-xs font-display font-bold uppercase text-amber-900 flex items-center space-x-1.5">
+                            <span>🦸‍♀️</span>
+                            <span>Peran Hebat Sahabat SD:</span>
+                        </div>
+                        <p id="cinema-role" class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed"></p>
+                    </div>
+
+                    <div class="bg-emerald-50 p-4 rounded-2xl border-2 border-emerald-200 space-y-1.5">
+                        <div class="text-xs font-display font-bold uppercase text-emerald-900 flex items-center space-x-1.5">
+                            <span>💡</span>
+                            <span>Pelajaran Bermakna:</span>
+                        </div>
+                        <p id="cinema-learning" class="text-xs sm:text-sm text-slate-700 italic leading-relaxed"></p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-2 pt-2">
+                        <button id="cinema-detail-btn" class="btn-3d bg-sky-500 hover:bg-sky-600 text-white text-xs font-display font-bold px-4 py-2.5 rounded-xl flex items-center space-x-1.5">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Baca Detail Lengkap</span>
+                        </button>
+                        <a id="cinema-external-link" href="#" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-500 hover:text-rose-600 underline flex items-center space-x-1">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Buka di Aplikasi IG</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Simulasi Interaktif Sahabat SD (Mini Quiz) -->
+    <div id="quiz-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-xl w-full overflow-hidden shadow-2xl border border-slate-200">
+            <div class="bg-gradient-to-r from-amber-500 to-orange-500 p-6 text-slate-950 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-11 h-11 rounded-2xl bg-white/30 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-xl">Simulasi Tantangan Sahabat SD</h3>
+                        <p class="text-xs font-semibold text-slate-900/80">Uji kepekaan karakter & solusi ala SEDALAS!</p>
+                    </div>
+                </div>
+                <button onclick="closeQuizModal()" class="w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="quiz-body" class="p-6 space-y-5">
+                <!-- Populated dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Sinergi Catur Pusat Pendidikan -->
+    <div id="catur-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200">
+            <div class="bg-gradient-to-r from-sky-800 to-emerald-700 p-6 text-white flex items-center justify-between">
+                <div>
+                    <h3 class="font-display font-bold text-xl sm:text-2xl">Sinergi Catur Pusat Pendidikan SEDALAS</h3>
+                    <p class="text-xs text-sky-200 mt-0.5">Kolaborasi 4 Pilar Ekosistem Pendidikan SDN 011 Balikpapan Tengah</p>
+                </div>
+                <button onclick="closeCaturModal()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div class="p-4 rounded-2xl bg-sky-50 border border-sky-200 space-y-1.5">
+                    <div class="font-display font-bold text-sky-900 flex items-center space-x-2">
+                        <i class="fa-solid fa-school text-sky-600"></i>
+                        <span>1. Pusat Sekolah</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Kepala Sekolah, Dewan Guru, Guru PJOK, Guru Agama/Pembina Rohani, Tenaga Kependidikan, Perpustakaan, dan Murid Sahabat Sekolah Dasar sebagai penggerak sebaya.
+                    </p>
+                </div>
+                <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1.5">
+                    <div class="font-display font-bold text-emerald-900 flex items-center space-x-2">
+                        <i class="fa-solid fa-house-chimney-user text-emerald-600"></i>
+                        <span>2. Pusat Keluarga</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Orang Tua/Wali Murid dan Paguyuban Kelas seluruh rombel yang menyiapkan bekal bergizi (Bestie), mendampingi jurnal 7 KAIH di rumah, dan berkolaborasi dalam lomba serta pentas.
+                    </p>
+                </div>
+                <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-1.5">
+                    <div class="font-display font-bold text-amber-900 flex items-center space-x-2">
+                        <i class="fa-solid fa-building-shield text-amber-600"></i>
+                        <span>3. Masyarakat & Mitra Pemerintah</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Puskesmas Balikpapan Tengah & Sumber Rejo, DLH/Bank Sampah Unit, Babinsa & Bhabinkamtibmas, Kelurahan Sumber Rejo, Karang Taruna, Komite Sekolah, TBM, Kemenag, Disdikbud, & BPMP Kaltim.
+                    </p>
+                </div>
+                <div class="p-4 rounded-2xl bg-violet-50 border border-violet-200 space-y-1.5">
+                    <div class="font-display font-bold text-violet-900 flex items-center space-x-2">
+                        <i class="fa-solid fa-photo-film text-violet-600"></i>
+                        <span>4. Pusat Media</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Kanal Media Sosial Resmi Sekolah (Instagram Reels & TikTok), Papan Interaktif Digital, Jurnal Digital 7 KAIH, serta Platform Digital Pendidikan yang memperluas inspirasi praktik baik.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Data & Application Logic -->
+    <script>
+        // 1-Paragraph Explanations for Each Menu based on the PDF Document
+        const menuDescriptions = {
+            semua: {
+                badge: "Ikhtisar Portofolio SEDALAS",
+                title: "Portofolio Lengkap Sahabat Sekolah Dasar SEDALAS",
+                icon: "fa-layer-group",
+                colorClass: "bg-sky-100 text-sky-600",
+                badgeClass: "bg-sky-100 text-sky-800",
+                paragraph: "Portofolio Sahabat Sekolah Dasar SEDALAS di SD Negeri 011 Balikpapan Tengah merangkum 43 aksi nyata kolaboratif yang mengintegrasikan program pembiasaan karakter harian, permainan edukasi interaktif, promosi wisata dan kearifan lokal Kota Balikpapan, kegiatan sekolah penumbuh karakter, serta budaya rukun sama teman. Seluruh rangkaian kegiatan ini dilaksanakan secara berkesinambungan melalui sinergi Catur Pusat Pendidikan—yang melibatkan Sekolah, Keluarga, Masyarakat/Mitra Pemerintah, dan Media—dengan menempatkan murid Sahabat Sekolah Dasar sebagai teladan sebaya, penggerak positif, dan duta sekolah ramah anak."
+            },
+            pembiasaan: {
+                badge: "Menu 1 • Pembiasaan Harian & 7 KAIH",
+                title: "Program Pembiasaan Karakter",
+                icon: "fa-seedling",
+                colorClass: "bg-emerald-100 text-emerald-600",
+                badgeClass: "bg-emerald-100 text-emerald-800",
+                paragraph: "Program Pembiasaan Karakter di SDN 011 Balikpapan Tengah (SEDALAS) merupakan rangkaian rutinitas harian dan mingguan yang dirancang untuk menginternalisasi 7 Kebiasaan Anak Indonesia Hebat (7 KAIH) secara konsisten melalui keteladanan teman sebaya (peer modeling) serta pemantauan kolaboratif antara guru dan orang tua. Melalui kegiatan seperti membawa bekal bergizi seimbang (Bestie) dan Sarapan Sehat Bersama, cerita inspiratif 7 KAIH serta jurnal digital harian, pembiasaan literasi 15 menit (Geram), penanaman religiusitas lewat pembacaan Asmaul Husna, Shalat Dhuha, Jumat Imtaq, dan jadwal pemimpin doa bergilir (Leader Pray Schedule), hingga penyambutan pagi dengan Morning Friend Sticker, Senam Bersama Setiap Sabtu, serta Gerakan Sekolah Bersih, murid dilatih menjadi pribadi yang beriman, disiplin waktu, gemar belajar, peduli lingkungan, dan bugar jasmani maupun rohani."
+            },
+            permainan: {
+                badge: "Menu 2 • Gamifikasi & Papan Interaktif",
+                title: "Permainan Edukasi",
+                icon: "fa-puzzle-piece",
+                colorClass: "bg-violet-100 text-violet-600",
+                badgeClass: "bg-violet-100 text-violet-800",
+                paragraph: "Permainan Edukasi menghadirkan inovasi pembelajaran berbasis gamifikasi yang menyenangkan dan kontekstual, baik menggunakan media kartu fisik maupun Papan Interaktif Digital, dengan dipandu langsung oleh murid Sahabat Sekolah Dasar sebagai fasilitator kelompok dan pencatat skor sportif. Melalui rangkaian permainan seperti Bineka Card Game untuk mengenal keragaman budaya nusantara, BUS AMAN Game untuk simulasi keselamatan transportasi publik, DPL Card Game untuk memahami 8 Dimensi Profil Lulusan, HAKI Card Game untuk menanamkan 9 nilai integritas antikorupsi, Kartu Kwartet 7 KAIH, kuis kebangsaan Ranking 1 Cinta Pancasila, hingga aktivitas gerak dan kuis singkat Sedalas Jeda Ceria, murid berhasil mengasah nalar kritis, kejujuran, regulasi emosi, serta kemampuan bekerja sama secara gembira."
+            },
+            wisata: {
+                badge: "Menu 3 • Kearifan Lokal & Ikon Kota",
+                title: "Promosi Wisata Balikpapan",
+                icon: "fa-map-location-dot",
+                colorClass: "bg-amber-100 text-amber-600",
+                badgeClass: "bg-amber-100 text-amber-800",
+                paragraph: "Promosi Wisata Balikpapan merupakan wadah aktualisasi murid Sahabat Sekolah Dasar SEDALAS dalam mengenal, mencintai, dan memperkenalkan kekayaan sejarah, ruang terbuka hijau, budaya, serta destinasi ramah anak di Kota Balikpapan kepada khalayak luas. Melalui pembuatan vlog edukasi JEJAK RISTA yang menjelajahi landmark ikonik Kota Balikpapan seperti KWPLH Beruang Madu, Penangkaran Buaya Teritip, dan Mangrove Center Graha Indah, permainan Manuntung 7 KAIH Sedalas Game yang mengangkat kearifan lokal Manuntung Balikpapan, serta pelestarian permainan rakyat pada Pekan Olahraga Tradisional bersama Karang Taruna setempat, murid bertindak sebagai pemandu vlog cilik dan duta promosi kota yang terampil berkomunikasi publik serta bangga terhadap identitas daerahnya."
+            },
+            kegiatan: {
+                badge: "Menu 4 • Ajang Kreasi, Kesehatan & Keteladanan",
+                title: "Kegiatan Sekolah yang Menumbuhkan Karakter",
+                icon: "fa-award",
+                colorClass: "bg-sky-100 text-sky-600",
+                badgeClass: "bg-sky-100 text-sky-800",
+                paragraph: "Kegiatan Sekolah yang Menumbuhkan Karakter mencakup berbagai program kolaboratif berskala sekolah yang melibatkan kemitraan erat antara warga sekolah, paguyuban orang tua, puskesmas, aparat kewilayahan, serta tokoh masyarakat untuk membentuk ketangguhan mental, kebugaran fisik, apresiasi seni budaya, dan adab kesantunan murid. Mulai dari layanan kesehatan Bulan Imunisasi Anak Sekolah (BIAS) dan Cek Kesehatan Gratis (CKG), panggung ekspresi Fashion Show Aku Cinta Batik Indonesia, Jalan Sehat kreasi daur ulang, Pentas Pelajar Semesta, dan Sedalas Got Talent, perayaan Hari Merdeka serta Lomba Cosplay Wali Murid, peringatan Maulid Nabi SAW dan Sumpah Pemuda, Perkemahan Anak Indonesia Hebat, hingga penyambutan santun tamu Rapat K3S dan Kunjungan Kepala BPMP Provinsi Kalimantan Timur, murid Sahabat SD tampil percaya diri mengambil peran kepemimpinan di setiap lini acara."
+            },
+            rukun: {
+                badge: "Menu 5 • Iklim Sekolah Aman, Empati & Zero-Bullying",
+                title: "Rukun Sama Teman",
+                icon: "fa-heart-handshake",
+                colorClass: "bg-rose-100 text-rose-600",
+                badgeClass: "bg-rose-100 text-rose-800",
+                paragraph: "Program Rukun Sama Teman berfokus pada penciptaan iklim sekolah yang aman, inklusif, bebas perundungan (Zero-Bullying), serta penuh kehangatan persahabatan baik di dalam kelas maupun di lingkungan masyarakat sekitar. Melalui pembiasaan Cerita 7 KAIH Versi Raihana tentang indahnya berbagi bekal tanpa membeda-bedakan kawan, pembuatan kartu apresiasi buatan sendiri pada Congrats Gift Card, kampanye tutur kata santun dan empat kata ajaib lewat program Gembira (Gemar Bicara Ramah), misi rahasia menolong sesama tanpa pamrih dalam Petualangan Kebajikan, hingga deklarasi anti-perundungan dan aksi berbagi kasih bersama anak-anak di Kampung Kangkung Kang Bejo pada program Sedalas Ramah Anak, murid belajar memuliakan teman, mengekspresikan apresiasi secara tulus, dan merawat kerukunan sosial."
+            }
+        };
+
+        // Complete 43 Activities Data from the PDF Document
+        const activitiesData = [
+            {
+                id: 1,
+                name: "Bestie (Bekal Sehat Setiap Senin)",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Program membawa bekal bergizi seimbang dari rumah setiap hari Senin yang dinikmati bersama di kelas di bawah bimbingan guru dan pantauan gizi.",
+                good: "Konsumsi jajanan tidak higienis menurun drastis di hari Senin.",
+                challenge: "Menu bekal yang dibawa sebagian anak belum memenuhi standar Isi Piringku.",
+                solution: "Membagikan infografis rekomendasi bekal bergizi seimbang kepada paguyuban orang tua.",
+                catur: "Sekolah (Dewan Guru), Keluarga (Orang Tua penyedia bekal bergizi), Mitra Pemerintah (Puskesmas Balikpapan Tengah).",
+                role: "Memeriksa kelengkapan bekal kelompok dan mengampanyekan botol minum isi ulang.",
+                learning: "Membiasakan pola konsumsi pangan bergizi seimbang dan menumbuhkan rasa syukur serta kehangatan makan bersama teman sebaya.",
+                links: ["https://www.instagram.com/reel/DdYsAiwz11w/"]
+            },
+            {
+                id: 2,
+                name: "Bineka Card Game",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Permainan kartu mencocokkan warisan suku, pakaian tradisional, rumah adat, dan nilai toleransi dari berbagai daerah di tanah air.",
+                good: "Murid terkesima melihat keberagaman corak budaya pakaian dan adat nusantara.",
+                challenge: "Keterbatasan jumlah set kartu permainan untuk kelas paralel yang besar.",
+                solution: "Sistem bermain pos berputar (rotational station) setiap 15 menit.",
+                catur: "Sekolah (Guru, Murid), Keluarga (Orang Tua Murid), Sekolah SD lainnya, Masyarakat/Mitra.",
+                role: "Menjadi pemandu meja bermain dan memvalidasi kebenaran pasangan kartu budaya.",
+                learning: "Menumbuhkan rasa bangga dan sikap saling menghormati atas kemajemukan bangsa Indonesia yang kaya ragam tradisi.",
+                links: ["https://www.instagram.com/reel/Dd6GCROVIW/"]
+            },
+            {
+                id: 3,
+                name: "Bulan Imunisasi Anak Sekolah (BIAS) SEDALAS",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Pelaksanaan imunisasi berkala untuk meningkatkan kekebalan tubuh murid terhadap penyakit menular melalui skrining dan penyuntikan vaksin oleh nakes.",
+                good: "Ketercapaian target imunisasi berjalan lancar dan tertib sesuai jadwal.",
+                challenge: "Murid kelas bawah merasa cemas, takut jarum suntik, dan menangis.",
+                solution: "Sahabat SD mendampingi secara suportif dan membagikan stiker keberanian anak hebat.",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Orang Tua Murid), Pemerintah/Mitra (Puskesmas Sumber Rejo).",
+                role: "Duta penenang adik kelas di ruang tunggu, mendampingi agar berani disuntik.",
+                learning: "Menyadari pentingnya menjaga imunitas tubuh sejak dini dan belajar menghadapi rasa takut dengan sikap berani dan saling mendukung.",
+                links: ["https://www.instagram.com/reel/Dc2epVoJeOP/"]
+            },
+            {
+                id: 4,
+                name: "BUS AMAN Game",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Permainan simulasi rute transportasi bus aman yang melatih murid mengenai prosedur tanggap bahaya, rambu jalan, dan etika berteman saat transit menggunakan Papan Interaktif Digital secara bergotong royong.",
+                good: "Murid sangat tanggap mempraktikkan jalur evakuasi dan etika antre bus. Suasana kelas makin terasa seru, murid makin fokus, paham, dan semangat menerapkan perilaku ramah.",
+                challenge: "Ruang kelas sempit untuk simulasi lintasan halte/lorong bus, serta giliran papan interaktif.",
+                solution: "Memanfaatkan koridor sekolah bertingkat sebagai denah jalur miniatur jalan raya dan giliran tertib.",
+                catur: "Sekolah (Guru, Murid), Keluarga (Orang Tua Murid), Sekolah SD lainnya, Masyarakat/Mitra.",
+                role: "Memerankan petugas halte cilik, pengawas sabuk pengaman, dan menyelesaikan tantangan budaya sekolah aman di papan digital.",
+                learning: "Mengasah kewaspadaan diri terhadap keselamatan pribadi di ruang publik serta memupuk budaya mendahulukan yang membutuhkan.",
+                links: ["https://www.instagram.com/reel/DeVqL9gT6F8/"]
+            },
+            {
+                id: 5,
+                name: "Cek Kesehatan Gratis (CKG) SEDALAS",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Pemeriksaan fisik berkala meliputi pemeriksaan tajam penglihatan, kebersihan telinga, kesehatan gigi, dan pengukuran status gizi (BB/TB).",
+                good: "Seluruh murid terdata rekam kesehatannya dengan cepat dan tertib.",
+                challenge: "Antrean pemeriksaan kesehatan cukup padat di ruang UKS.",
+                solution: "Mengatur alur antrean sistem nomor kloter per kelas dipandu Sahabat SD.",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Orang Tua Murid), Pemerintah/Mitra (Puskesmas Sumber Rejo).",
+                role: "Membantu pencatatan buku rekam kesehatan cilik dan mengarahkan alur antrean bilik periksa.",
+                learning: "Memahami kondisi kebugaran tubuh sendiri serta menyadari pentingnya merawat organ mata, gigi, dan telinga secara higienis.",
+                links: ["https://www.instagram.com/reel/Dcz55hWp9D-/"]
+            },
+            {
+                id: 6,
+                name: "Cerita 7 KAIH Versi Al Ghazali",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Penayangan media video inspiratif yang memuat narasi kisah harian Sahabat SD dalam menerapkan 7 Kebiasaan Anak Indonesia Hebat.",
+                good: "Narasi video mengalir alami dan relevan dengan rutinitas harian anak.",
+                challenge: "Pengambilan audio di area sekolah yang ramai.",
+                solution: "Menggunakan mikrofon lavalier dan memilih ruang rekam khusus yang hening.",
+                catur: "Sekolah (Guru Pembimbing), Keluarga (Orang Tua Al Ghazali di rumah), Media (Kanal Media Sosial Sekolah).",
+                role: "Narator utama dan aktor teladan video praktik baik.",
+                learning: "Murid terdorong merefleksikan kebiasaan hariannya sendiri melalui inspirasi positif dari teladan nyata teman sebaya (peer modeling).",
+                links: ["https://www.instagram.com/reel/Dc-cCW9z8WT/"]
+            },
+            {
+                id: 7,
+                name: "Cerita 7 KAIH Versi Alvin",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Penuturan cerita pengalaman pribadi Sahabat SD mengenai pentingnya kebiasaan bangun pagi, disiplin waktu, dan rutin berolahraga secara mandiri.",
+                good: "Cerita lugas dan memotivasi teman sekelas untuk mengurangi kebiasaan begadang.",
+                challenge: "Murid sempat kaku saat berbicara di depan lensa kamera.",
+                solution: "Guru melakukan bimbingan coaching santai sebelum perekaman video.",
+                catur: "Sekolah (Guru Pembimbing), Keluarga (Orang Tua Alvin), Media (Instagram Resmi Sekolah).",
+                role: "Menyampaikan refleksi diri dan pesan ajakan hidup bugar sederhana.",
+                learning: "Memahami bahwa kebugaran fisik dan kesuksesan belajar berawal dari kedisiplinan harian.",
+                links: ["https://www.instagram.com/reel/DdJXCCdTQDE/"]
+            },
+            {
+                id: 8,
+                name: "Cerita 7 KAIH Versi Raihana",
+                category: "rukun",
+                categoryLabel: "Rukun Sama Teman",
+                desc: "Penyampaian kisah reflektif oleh Sahabat SD tentang kebiasaan membawa bekal sehat gizi seimbang dan mempererat kepedulian antarteman.",
+                good: "Penyampaian pesan hangat dan menyentuh emosi positif teman sekelas.",
+                challenge: "Menjaga durasi video agar tetap ringkas untuk media sosial (Reels/TikTok).",
+                solution: "Menyusun naskah ringkas 1 menit terfokus (Kondisi - Aksi - Pembelajaran).",
+                catur: "Sekolah (Guru Pembimbing, Teman Sebaya), Keluarga (Orang Tua Raihana), Media (Media Sosial Sekolah).",
+                role: "Membawakan kisah persahabatan dan bekal makanan bergizi seimbang.",
+                learning: "Menyadari pentingnya menjaga kesehatan raga lewat makanan bergizi serta keindahan berbagi kebaikan tanpa membeda-bedakan kawan.",
+                links: ["https://www.instagram.com/reel/DdEFhUNz9VB/"]
+            },
+            {
+                id: 9,
+                name: "Cerita 7 KAIH Versi Rista",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Sesi berbagi pengalaman oleh Sahabat SD mengenai kebiasaan gemar membaca buku 15 menit dan etika bijak memanfaatkan media digital.",
+                good: "Menunjukkan buku bacaan favorit dan tips membaca 15 menit dengan lugas.",
+                challenge: "Menumbuhkan rasa percaya diri saat menatap kamera video.",
+                solution: "Melakukan latihan simulasi berbicara 1 menit di depan cermin kelas.",
+                catur: "Sekolah (Guru Pembimbing), Keluarga (Orang tua Rista), Media (Media Publikasi Sekolah).",
+                role: "Membagikan tips literasi dan mempromosikan pojok baca kelas.",
+                learning: "Menyadari bahwa buku membuka cakrawala wawasan luas dan memahami pentingnya etika santun saat berinteraksi di ruang digital.",
+                links: ["https://www.instagram.com/reel/Dc8AAH6OLu8/"]
+            },
+            {
+                id: 10,
+                name: "Cerita Bermasyarakat Ala Alvin",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pembuatan konten video edukatif yang mendokumentasikan etika interaksi ramah anak di lingkungan warga sekitar dan tetangga rumah.",
+                good: "Menginspirasi murid bersikap santun kepada warga sekitar sekolah dan tetangga.",
+                challenge: "Menyesuaikan jadwal pengambilan gambar di lingkungan warga sekitar.",
+                solution: "Berkoordinasi dengan pengurus RT dan keluarga setempat secara terencana.",
+                catur: "Sekolah (Guru Pembimbing), Keluarga (Orang Tua pendamping kebiasaan pagi), Media (Instagram/TikTok Resmi Sekolah).",
+                role: "Aktor penggerak dan juru bicara perilaku ramah anak di masyarakat.",
+                learning: "Memahami pentingnya adab bermasyarakat, budaya tegur sapa, dan kepedulian menjaga keharmonisan lingkungan sosial.",
+                links: ["https://www.instagram.com/reel/DcGTIZnTLdi/"]
+            },
+            {
+                id: 11,
+                name: "Congrats Gift Card",
+                category: "rukun",
+                categoryLabel: "Rukun Sama Teman",
+                desc: "Aktivitas membuat dan memberikan kartu apresiasi buatan sendiri kepada teman sebaya atau guru atas kebaikan dan usaha positif yang telah dilakukan.",
+                good: "Setiap anak merasakan kebahagiaan saat dihargai oleh kawannya.",
+                challenge: "Murid tertentu khawatir kartunya tidak dibalas oleh teman lain.",
+                solution: "Sahabat SD menyiapkan kotak surat apresiasi bersama untuk memastikan setiap murid menerima kartu.",
+                catur: "Sekolah (Guru Kelas, Murid), Keluarga (Dukungan orang tua melatih anak berkarya di rumah).",
+                role: "Mengorganisir kotak apresiasi kelas dan membagikan kartu secara rahasia/ceria.",
+                learning: "Belajar mengekspresikan rasa terima kasih secara tulus dan menyadari bahwa apresiasi kecil dapat memberi dampak besar bagi kebahagiaan orang lain.",
+                links: ["https://www.instagram.com/reel/Dek4ROkJKRf/"]
+            },
+            {
+                id: 12,
+                name: "DPL (Dimensi Profil Lulusan) Card Game",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Permainan kartu edukatif interaktif untuk mengeksplorasi dan memahami 8 Dimensi Profil Lulusan secara kontekstual melalui studi kasus mini.",
+                good: "Murid antusias mendiskusikan pemecahan kasus kartu karakter.",
+                challenge: "Kosakata dimensi profil kelulusan yang masih cukup asing bagi murid kelas bawah.",
+                solution: "Penyederhanaan bahasa contoh kasus ke dalam cerita keseharian anak.",
+                catur: "Sekolah (Guru, Murid), Keluarga (Orang Tua Murid), Sekolah SD lainnya, Masyarakat/Mitra.",
+                role: "Memandu jalannya giliran main dan membacakan teks narasi studi kasus.",
+                learning: "Mengasah kemampuan bernalar kritis dalam memecahkan masalah kontekstual serta memahami dimensi profil lulusan yang diharapkan bangsa.",
+                links: ["https://www.instagram.com/reel/Denps4Nzgql/"]
+            },
+            {
+                id: 13,
+                name: "Fashion Show Aku Cinta Batik Indonesia",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Peragaan busana nusantara bertema batik warisan budaya bangsa yang diperagakan bersama oleh murid dan paguyuban orang tua di panggung sekolah.",
+                good: "Busana motif batik dari ragam daerah tampil sangat anggun dan meriah.",
+                challenge: "Rasa gugup murid dan orang tua saat berlenggak-lenggok di atas panggung.",
+                solution: "Geladi bersih singkat dan memutar latar musik instrumental nusantara yang hangat.",
+                catur: "Keluarga (Paguyuban Seluruh Rombel), Sekolah (Kepala Sekolah, Dewan Guru), Masyarakat (Komite Sekolah, Tokoh Masyarakat).",
+                role: "Peraga busana cilik dan narator pengantar filosofi motif batik nusantara.",
+                learning: "Menumbuhkan rasa bangga dan cinta terhadap karya warisan adiluhung budaya bangsa Indonesia sejak usia dini.",
+                links: ["https://www.instagram.com/reel/Dd-4jJszZ1s/"]
+            },
+            {
+                id: 14,
+                name: "Gembira (Gemar Bicara Ramah)",
+                category: "rukun",
+                categoryLabel: "Rukun Sama Teman",
+                desc: "Pembiasaan budaya tutur kata santun, penerapan kata ajaib (Tolong, Maaf, Terima Kasih, Permisi), dan kampanye anti-kata kasar di lingkungan sekolah.",
+                good: "Tercipta suasana interaksi kelas yang lebih sejuk dan saling menghormati.",
+                challenge: "Murid terpengaruh bahasa slang/kasar dari media sosial di luar sekolah.",
+                solution: "Pemberian stiker pin Bintang Ramah dan teguran empatik antarteman sebaya.",
+                catur: "Sekolah (Seluruh Warga Sekolah), Keluarga (Keteladanan komunikasi orang tua di rumah).",
+                role: "Melakukan pengamatan bahasa santun teman sekelas dan membagikan token senyuman.",
+                learning: "Merasakan kekuatan perkataan baik dalam meredakan konflik dan belajar berempati kepada orang lain melalui tutur kata yang memuliakan.",
+                links: ["https://www.instagram.com/reel/DeGTSJvpN2y/"]
+            },
+            {
+                id: 15,
+                name: "Gerakan Sekolah Bersih",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Aksi gotong royong warga sekolah membersihkan kelas, lorong, dan taman, serta memilah sampah bernilai ekonomis ke Bank Sampah Unit.",
+                good: "Lingkungan sekolah menjadi asri, segar, dan bebas genangan air.",
+                challenge: "Sebagian murid masih keliru membedakan wadah sampah organik vs anorganik.",
+                solution: "Sahabat SD memasang label petunjuk bergambar cerah pada setiap tempat sampah.",
+                catur: "Sekolah (Murid, Guru, Petugas Kebersihan), Pemerintah/Mitra (Dinas Lingkungan Hidup Balikpapan / Bank Sampah Unit).",
+                role: "Memimpin piket regu hijau cilik dan menimbang sampah terpilah.",
+                learning: "Menumbuhkan rasa tanggung jawab atas kebersihan lingkungan sekitar serta mengasah budaya gotong royong tanpa rasa jijik.",
+                links: ["https://www.instagram.com/reel/DfLOu7AJolh/"]
+            },
+            {
+                id: 16,
+                name: "Geram (Gerakan Rajin Membaca)",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pembiasaan membaca buku non-pelajaran selama 15 menit sebelum pembelajaran dimulai yang dilanjutkan dengan pencatatan ringkas di jurnal membaca.",
+                good: "Sudut baca kelas menjadi ruang yang aktif dan digemari murid.",
+                challenge: "Minat baca sebagian murid masih rendah terhadap buku teks tebal.",
+                solution: "Menyediakan buku cerita bergambar yang variatif melalui rotasi koleksi perpustakaan dan TBM.",
+                catur: "Sekolah (Guru Kelas, Perpustakaan), Masyarakat/Mitra (TBM / Pegiat Literasi Balikpapan).",
+                role: "Menyemangati teman-teman dan membagikan buku bacaan di pojok baca serta mengingatkan mencatat di jurnal membaca.",
+                learning: "Memperluas imajinasi dan kosa kata bahasa, mengasah fokus bernalar kritis, serta membiasakan diri menjadikan membaca sebagai hobi yang menyenangkan.",
+                links: ["https://www.instagram.com/reel/Dds3n0Oz0rp/"]
+            },
+            {
+                id: 17,
+                name: "HAKI (Hero Anti Korupsi) Card Game",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Permainan simulasi kartu edukasi integritas menggunakan Papan Interaktif Digital untuk mengenalkan nilai kejujuran, tanggung jawab, dan keadilan.",
+                good: "Murid antusias mendiskusikan keputusan moral dalam skenario kartu game.",
+                challenge: "Menjelaskan konsep abstrak korupsi ke dalam bahasa yang mudah dimengerti anak SD.",
+                solution: "Menggunakan analogi sederhana (tidak menyontek, tidak curang saat antre/membagi tugas).",
+                catur: "Sekolah (Guru Pengembang Game, Murid), Media/Mitra (Platform Digital Pendidikan / Komunitas Belajar Guru).",
+                role: "Fasilitator permainan kelompok dan pencatat poin aksi kejujuran.",
+                learning: "Menginternalisasi 9 nilai integritas antikorupsi sejak dini serta berani memilih sikap jujur dalam kehidupan nyata.",
+                links: ["https://www.instagram.com/reel/DfRUszozowy/"]
+            },
+            {
+                id: 18,
+                name: "Jalan Sehat dan Lomba Fashion Show",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Pelaksanaan jalan sehat warga sekolah menyusuri rute luar sekolah dengan pengawalan Babinsa/Bhabinkamtibmas, dilanjutkan peragaan busana kreasi daur ulang.",
+                good: "Seluruh rute aman dan panggung fashion show merayakan keunikan karya anak.",
+                challenge: "Pengaturan rombongan besar saat melewati jalan raya sekitar sekolah.",
+                solution: "Bekerja sama dengan Babinsa/Bhabinkamtibmas dan pihak kelurahan untuk pengamanan jalur.",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Orang Tua Murid), Pemerintah/Mitra (Babinsa, Bhabinkamtibmas, Kelurahan Sumber Rejo Balikpapan Tengah).",
+                role: "Menjadi pemimpin barisan jalan sehat dan peraga busana kreatif.",
+                learning: "Menumbuhkan kebanggaan bergaya hidup sehat, kepedulian mengolah sampah menjadi busana kreatif, serta kepekaan menjaga ketertiban umum.",
+                links: ["https://www.instagram.com/reel/Dcu31OozPqC/"]
+            },
+            {
+                id: 19,
+                name: "JEJAK RISTA (Jelajah Kota Balikpapan Bareng Rista)",
+                category: "wisata",
+                categoryLabel: "Promosi Wisata Balikpapan",
+                desc: "Pembuatan vlog edukasi jelajah sejarah lokal, ruang terbuka hijau, dan tempat ikonik landmark ramah anak di Kota Balikpapan (seperti KWPLH, Penangkaran Buaya, dan Mangrove Center).",
+                good: "Dokumentasi video informatif dan mengenalkan ikon kota ramah anak.",
+                challenge: "Keterbatasan mobilitas dan izin lokasi di titik-titik publik.",
+                solution: "Pengurusan izin koordinatif bersama pihak pengelola dan pemilihan rute yang aman.",
+                catur: "Sekolah (Guru Pembimbing, Teman Sebaya), Keluarga (Orang Tua), Media (Media Sosial Sekolah).",
+                role: "Pemandu vlog cilik, pewawancara, dan duta promosi ikon kota ramah anak.",
+                learning: "Mengenal dan mencintai kearifan lokal daerah sendiri serta melatih keterampilan komunikasi publik dan rasa percaya diri.",
+                links: [
+                    "https://www.instagram.com/reel/DdV-AC4zfde/",
+                    "https://www.instagram.com/reel/DdxvwP8zAie/",
+                    "https://www.instagram.com/reel/DfT62nDz6KK/"
+                ]
+            },
+            {
+                id: 20,
+                name: "Jurnal Digital 7 KAIH Sedalas",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pengisian lembar refleksi pembiasaan harian secara digital oleh murid yang terhubung dengan pantauan guru dan pendampingan orang tua di rumah.",
+                good: "Pengisian data ringkas dan terhubung langsung antara anak dan orang tua.",
+                challenge: "Sebagian murid belum memiliki fasilitas gawai mandiri di rumah.",
+                solution: "Jurnal disediakan fleksibel, baik melalui ponsel orang tua maupun kartu kendali fisik.",
+                catur: "Sekolah (Guru dan Tenaga Kependidikan), Keluarga (Orang Tua pemantau aktivitas rumah), Media.",
+                role: "Mengingatkan teman sekelas untuk mengisi refleksi mingguan.",
+                learning: "Membangun kemandirian dalam memantau pertumbuhan karakter diri serta mempererat komunikasi bermakna dengan orang tua di rumah.",
+                links: ["https://www.instagram.com/reel/Ddih47jzmrS/"]
+            },
+            {
+                id: 21,
+                name: "Kartu Kwartet 7 KAIH",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Permainan kelompok mencocokkan empat rumpun aksi utama dari pilar 7 Kebiasaan Anak Indonesia Hebat saat jam istirahat terarah.",
+                good: "Terjalin keakraban bermain antarsiswa lintas tingkatan kelas.",
+                challenge: "Risiko kartu permainan tercecer atau robek saat dimainkan.",
+                solution: "Kartu dilaminasi tahan air dan disiapkan kotak penyimpanan khusus di sudut baca.",
+                catur: "Sekolah (Guru, Murid), Keluarga (Orang Tua Murid), Sekolah SD lainnya, Masyarakat/Mitra.",
+                role: "Menjadi bankir kartu dan menjaga ketertiban regulasi permainan.",
+                learning: "Menginternalisasi kebiasaan hidup baik melalui aktivitas bermain yang seru dan mengasah kemampuan komunikasi diplomatik.",
+                links: ["https://www.instagram.com/reel/DeLya6VzXdF/"]
+            },
+            {
+                id: 22,
+                name: "Leader Pray Schedule",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Penjadwalan giliran seluruh murid secara bergantian untuk memimpin doa bersama di kelas sebelum dan sesudah kegiatan belajar mengajar.",
+                good: "Seluruh murid (termasuk yang pemalu) merasakan pengalaman memimpin doa di kelas.",
+                challenge: "Murid pemalu merasa cemas saat tiba gilirannya memimpin.",
+                solution: "Guru dan Sahabat SD mendampingi berdiri di samping murid tanpa paksaan.",
+                catur: "Sekolah (Guru Kelas, Guru Agama), Keluarga (Pembiasaan ibadah di rumah).",
+                role: "Mengatur jadwal giliran dan memberi contoh adab berdoa yang khusyuk.",
+                learning: "Menumbuhkan rasa percaya diri memimpin di depan umum dan menanamkan sikap toleransi beragama yang inklusif sejak dini.",
+                links: ["https://www.instagram.com/reel/DdITVv5T5HA/"]
+            },
+            {
+                id: 23,
+                name: "Lomba Cosplay, Bakiak dan Yel-Yel Wali Murid",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Perayaan kebersamaan paguyuban orang tua yang menampilkan busana pahlawan/adat, adu yel-yel kreatif, serta tanding bakiak beregu antarkelas.",
+                good: "Paguyuban kelas sangat kompak dan suasana sekolah sangat meriah penuh kehangatan.",
+                challenge: "Menyelaraskan waktu orang tua yang bekerja dan menjaga keselamatan lintasan bakiak.",
+                solution: "Koordinasi fleksibel via paguyuban dan penyiapan lintasan rumput yang empuk dan aman.",
+                catur: "Keluarga (Paguyuban Orang Tua/Wali Murid seluruh rombel), Sekolah (Kepala Sekolah, Dewan Guru), Masyarakat (Komite Sekolah, Tokoh Masyarakat).",
+                role: "Menyambut peserta di panggung, pengarah lintasan lomba, dan pemandu tepuk tangan ceria.",
+                learning: "Murid merasakan kebanggaan melihat orang tua kompak berkolaborasi dengan pihak sekolah demi mendukung atmosfer belajar yang bahagia.",
+                links: [
+                    "https://www.instagram.com/reel/DcP9n8aJYKZ/",
+                    "https://www.instagram.com/reel/DcQmv3lJabC/"
+                ]
+            },
+            {
+                id: 24,
+                name: "Lomba Hari Merdeka Kelas 1, 2, 4",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Pelaksanaan berbagai lomba ketangkasan fisik sederhana di lapangan sekolah bagi murid Fase A & B dengan bimbingan wali kelas dan panitia guru.",
+                good: "Murid fase awal sangat ceria dan antusias mengikuti lomba ketangkasan sederhana.",
+                challenge: "Murid kelas 1 mudah lelah atau menangis jika kalah lomba.",
+                solution: "Guru dan Sahabat SD memberi afirmasi positif bahwa partisipasi dan proses adalah hal utama.",
+                catur: "Sekolah (Kepala Sekolah, Guru Kelas 1, 2, 4), Keluarga (Orang Tua murid sebagai suporter), Masyarakat (Komite Sekolah).",
+                role: "Memandu barisan adik kelas dan memberi semangat proses berjuang.",
+                learning: "Murid belajar nilai sportivitas, kegembiraan merayakan kebersamaan, serta menyadari bahwa partisipasi aktif dan proses berjuang lebih utama daripada sekadar menang atau kalah.",
+                links: ["https://www.instagram.com/reel/DcFhTMXJ741/"]
+            },
+            {
+                id: 25,
+                name: "Lomba Hari Merdeka Kelas 3, 5, 6",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Pelaksanaan kompetisi permainan beregu antar-kelas untuk murid Fase B & C yang didampingi Sahabat SD sebagai juri cilik dan pencatat skor sportif.",
+                good: "Kerja sama regu terbangun solid dan antusiasme suporter sangat meriah.",
+                challenge: "Persaingan antarkelas rawan memicu gesekan atau ejekan (mocking).",
+                solution: "Sahabat SD memimpin yel-yel sportif dan mengawal komitmen Zero-Bullying saat bertanding.",
+                catur: "Sekolah (Dewan Guru, Guru PJOK), Keluarga (Orang Tua murid), Masyarakat (Komite Sekolah).",
+                role: "Menjadi juri cilik pendamping dan pencatat skor sportif.",
+                learning: "Murid mengasah kekompakan tim, daya juang pantang menyerah, serta pentingnya menjaga kerukunan dan sikap saling menghargai tanpa perundungan saat berkompetisi.",
+                links: ["https://www.instagram.com/reel/DcNYzFWJKLC/"]
+            },
+            {
+                id: 26,
+                name: "Manuntung 7 KAIH Sedalas Game",
+                category: "wisata",
+                categoryLabel: "Promosi Wisata Balikpapan",
+                desc: "Sesi bermain game edukatif berbasis kearifan lokal Manuntung Balikpapan untuk menguji pemahaman 7 Kebiasaan Anak Indonesia Hebat.",
+                good: "Suasana bermain berlangsung sangat hidup, interaktif, dan penuh tawa gembira.",
+                challenge: "Beberapa kelompok berebut giliran menjawab papan permainan.",
+                solution: "Sahabat SD menerapkan sistem kartu giliran yang adil dan transparan.",
+                catur: "Sekolah (Guru Pengembang Game, Murid), Media/Mitra (Platform Digital Pendidikan / Komunitas Belajar Guru).",
+                role: "Menjadi fasilitator kelompok dan pencatat perolehan skor nilai karakter.",
+                learning: "Memahami nilai-nilai 7 KAIH melalui cara bermain yang menyenangkan serta melatih regulasi emosi saat berkompetisi dalam kelompok.",
+                links: ["https://www.instagram.com/reel/DfTjlstpuMf/"]
+            },
+            {
+                id: 27,
+                name: "Membaca Asmaul Husna",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pembiasaan melafalkan 99 Nama Baik Allah secara berjamaah dengan irama tartil setiap pagi sebelum memulai kegiatan belajar di kelas.",
+                good: "Irama lantunan asmaul husna serempak dan membawa ketenangan kelas.",
+                challenge: "Murid kelas 1 masih terbata-bata mengikuti lafal hafalan yang cepat.",
+                solution: "Memperlambat tempo lantunan dan menyertakan panduan layar monitor/poster dinding.",
+                catur: "Sekolah (Dewan Guru, Murid), Keluarga (Dukungan hafalan orang tua).",
+                role: "Memandu pembacaan Asmaul Husna melalui mikrofon sentral ruang piket.",
+                learning: "Menghayati kebesaran sifat-sifat Tuhan Yang Maha Esa dan merasakan ketentraman jiwa saat memulai pembelajaran.",
+                links: ["https://www.instagram.com/reel/DfPCyg_pdQN/"]
+            },
+            {
+                id: 28,
+                name: "Morning Friend Sticker",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Penyambutan kedatangan murid di pintu gerbang sekolah oleh Sahabat SD dan guru piket dengan senyuman serta pemberian stiker bagi yang hadir tepat waktu.",
+                good: "Menurunkan angka keterlambatan murid secara bertahap dan menyenangkan.",
+                challenge: "Terjadi antrean murid di gerbang sekolah saat pembagian stiker.",
+                solution: "Sahabat SD membagi pos penyambutan di beberapa titik pintu masuk sekolah.",
+                catur: "Sekolah (Guru Piket, Sahabat SD), Keluarga (Orang Tua pengantar tepat waktu).",
+                role: "Berdiri di gerbang menyambut teman dengan senyum dan menempel stiker apresiasi.",
+                learning: "Belajar menghargai waktu, merasakan hangatnya budaya penyambutan ramah, serta termotivasi untuk senantiasa hadir tepat waktu.",
+                links: ["https://www.instagram.com/reel/DdS87iBzeqa/"]
+            },
+            {
+                id: 29,
+                name: "Pekan Olahraga Tradisional",
+                category: "wisata",
+                categoryLabel: "Promosi Wisata Balikpapan",
+                desc: "Festival pertandingan aneka olahraga rakyat (bakiak panjang, lari balok, gobak sodor, egrang batok) untuk melestarikan budaya nusantara.",
+                good: "Lapangan riuh dengan gelak tawa dan sportivitas kompetisi tradisional.",
+                challenge: "Peralatan tradisional (seperti batok kelapa dan tali egrang) aus atau patah.",
+                solution: "Panitia menyiapkan cadangan perlengkapan memadai bekerja sama dengan Karang Taruna.",
+                catur: "Sekolah (Guru PJOK, Seluruh Murid), Masyarakat/Mitra (Karang Taruna Kelurahan Balikpapan Tengah / Komunitas Olahraga Tradisional).",
+                role: "Menjadi asisten wasit pencatat waktu dan pemandu jalur lintasan bermain.",
+                learning: "Belajar menghargai warisan budaya kearifan lokal, melatih ketangkasan motorik, serta menjalin kekompakan antarteman.",
+                links: ["https://www.instagram.com/reel/Dea5sZKpiuj/"]
+            },
+            {
+                id: 30,
+                name: "Pentas Pelajar Semesta",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Panggung kreasi bakat murid yang menampilkan drama musikal karakter, ansambel musik daerah, dongeng kearifan lokal, dan pembacaan puisi.",
+                good: "Murid tampil percaya diri mengekspresikan bakat seni di hadapan orang tua dan komunitas.",
+                challenge: "Pengaturan tata suara dan pencahayaan panggung pentas seni terbuka.",
+                solution: "Bekerja sama dengan sanggar seni lokal dan panitia komite sekolah.",
+                catur: "Sekolah (Guru, Murid), Keluarga (Orang Tua pendukung bakat anak), Masyarakat (Sanggar Seni Budaya Lokal / Komite).",
+                role: "Penampil karya seni, pembawa acara cilik, dan duta penyambut tamu pameran.",
+                learning: "Mengembangkan apresiasi seni, keberanian berekspresi di panggung umum, dan kebanggaan atas keberagaman talenta teman sebaya.",
+                links: ["https://www.instagram.com/reel/DfJOaQkTHib/"]
+            },
+            {
+                id: 31,
+                name: "Peringatan Maulid Nabi SAW",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Peringatan hari besar keagamaan yang diisi penampilan seni rebana cilik, pembacaan selawat, dan penyampaian hikmah keteladanan Nabi oleh penceramah tamu.",
+                good: "Antusiasme murid menyimak kisah teladan sejarah sangat tinggi.",
+                challenge: "Menjaga keteraturan tempat duduk murid saat acara berlangsung di aula terbuka.",
+                solution: "Sahabat SD disebar di setiap saf rombel kelas untuk menjaga suasana kondusif.",
+                catur: "Sekolah (Dewan Guru), Masyarakat/Mitra (Tokoh Agama Kemenag Balikpapan / Penceramah Tamu, Komite Sekolah).",
+                role: "Membaca sari tilawah Qur'an dan menjadi pemandu barisan penonton.",
+                learning: "Meneladani sifat amanah, kejujuran, kasih sayang, dan budi pekerti luhur dalam pergaulan sehari-hari di sekolah.",
+                links: ["https://www.instagram.com/reel/Dc5goJhziTG/"]
+            },
+            {
+                id: 32,
+                name: "Peringatan Sumpah Pemuda",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Upacara peringatan khidmat mengenakan baju adat nusantara yang disemarakkan pembacaan ikrar persatuan dan parade kebhinekaan antarkelas.",
+                good: "Suasana upacara berlangsung sangat khidmat dan penuh rasa kebangsaan.",
+                challenge: "Pengkondisian barisan murid di bawah terik matahari pagi.",
+                solution: "Waktu pelaksanaan upacara dimajukan lebih pagi dan disiapkan pos medis hidrasi oleh PMR/UKS.",
+                catur: "Keluarga (Paguyuban Orang Tua/Wali Murid seluruh rombel), Sekolah (Kepala Sekolah, Dewan Guru), Masyarakat (Komite Sekolah, Tokoh Masyarakat).",
+                role: "Petugas paduan suara, pembaca teks Sumpah Pemuda, dan pemimpin barisan kostum adat.",
+                learning: "Meresapi nilai persatuan bangsa, pentingnya toleransi antarsuku dan agama, serta komitmen mencintai tanah air Indonesia.",
+                links: ["https://www.instagram.com/reel/DfRNIJFTCaa/"]
+            },
+            {
+                id: 33,
+                name: "Perkemahan Anak Indonesia Hebat SEDALAS",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Perkemahan penggalang ceria di halaman sekolah yang diisi aktivitas pionering tenda, api unggun apresiasi, penjelajahan sandi, dan simulasi P3K.",
+                good: "Murid sangat mandiri menyiapkan perlengkapan regu dan aktif di setiap pos tantangan.",
+                challenge: "Hujan sore hari yang berpotensi membasahi area perkemahan.",
+                solution: "Menyiapkan ruang kelas dan aula sebagai titik evakuasi cadangan yang higienis.",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Paguyuban Orang Tua), Pemerintah/Mitra (Puskesmas Balikpapan Tengah, Bhabinkamtibmas).",
+                role: "Pemimpin regu (pinru), pemandu api unggun ceria, dan koordinator kebersihan tenda.",
+                learning: "Mengasah kemandirian hidup tanpa orang tua, kepemimpinan regu, ketahanan mental-fisik, dan solidaritas kepanduan pramuka.",
+                links: ["https://www.instagram.com/reel/DeVoYQDzk6M/"]
+            },
+            {
+                id: 34,
+                name: "Petualangan Kebajikan",
+                category: "rukun",
+                categoryLabel: "Rukun Sama Teman",
+                desc: "Misi harian berbasis kartu tantangan rahasia untuk melakukan kebaikan tanpa pamrih (membantu guru, merapikan meja teman, menyapa petugas kantin).",
+                good: "Terjadi gelombang aksi tolong-menolong spontan antarmurid.",
+                challenge: "Ada murid yang mengharapkan imbalan pujian secara langsung setelah berbuat baik.",
+                solution: "Guru menanamkan esensi kebaikan ikhlas yang dicatat di pohon kebajikan pribadi.",
+                catur: "Sekolah (Guru Mapel, Guru Kelas, Murid).",
+                role: "Membagikan kartu misi harian dan memvalidasi kebaikan di pohon kebaikan kelas.",
+                learning: "Merasakan ketulusan memberi manfaat bagi sesama tanpa pamrih serta menyadari bahwa kebaikan kecil menular kepada sesama.",
+                links: ["https://www.instagram.com/reel/DeO1cBBT619/"]
+            },
+            {
+                id: 35,
+                name: "Ranking 1 - Cinta Pancasila",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Kuis interaktif wawasan kebangsaan di lapangan sekolah di mana murid menjawab butir pengamalan Pancasila menggunakan papan spidol mini.",
+                good: "Murid sangat antusias dan bernalar kritis menganalisis butir pengamalan sila.",
+                challenge: "Beberapa peserta gugur di awal merasa kecewa.",
+                solution: "Memberikan babak kesempatan emas (wildcard) berupa yel-yel persatuan antarkelas.",
+                catur: "Keluarga (Paguyuban Orang Tua/Wali Murid seluruh rombel), Sekolah (Kepala Sekolah, Dewan Guru), Masyarakat (Komite Sekolah, Tokoh Masyarakat).",
+                role: "Juri garis pendamping, pemeriksa papan jawaban, dan pencatat skor sportif.",
+                learning: "Menguatkan pemahaman nilai-nilai luhur Pancasila dalam kehidupan nyata serta belajar menerima hasil kompetisi secara lapang dada.",
+                links: ["https://www.instagram.com/reel/DeiTcfgpCDO/"]
+            },
+            {
+                id: 36,
+                name: "Sarapan Sehat Bersama",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Kegiatan makan sarapan bersama secara berkala yang diawali edukasi sanitasi cuci tangan pakai sabun (CTPS) 6 langkah dan edukasi zat gizi harian.",
+                good: "Murid makan dengan lahap didampingi edukasi gizi dari sanitarian Puskesmas.",
+                challenge: "Sampah bungkus makanan jika ada murid yang membawa makanan berplastik sekali pakai.",
+                solution: "Mewajibkan wadah makan/minum guna ulang (reusable / zero waste).",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Komite Orang Tua), Pemerintah/Mitra (Tenaga Sanitarian/Ahli Gizi Puskesmas Balikpapan Tengah).",
+                role: "Memeriksa kebersihan tangan sebelum makan dan memandu doa bersama.",
+                learning: "Menyadari hubungan langsung antara sarapan bergizi dengan daya fokus belajar serta kepedulian mengurangi sampah plastik sekali pakai.",
+                links: ["https://www.instagram.com/reel/DfOZjVEpuph/"]
+            },
+            {
+                id: 37,
+                name: "Sedalas Got Talent & Tari Kreasi Nusantara",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Ajang panggung seni inklusif bagi seluruh murid untuk menampilkan bakat seni, musik, dan tarian daerah dengan Sahabat SD sebagai pembawa acara cilik.",
+                good: "Setiap anak berani tampil percaya diri tanpa takut dinilai salah.",
+                challenge: "Rasa gugup murid yang baru pertama kali tampil di panggung besar.",
+                solution: "Menerapkan prinsip Galeri Apresiasi di mana semua penampil mendapat piagam dan apresiasi setara.",
+                catur: "Sekolah (Warga Sekolah), Keluarga (Orang Tua Murid), Pemerintah/Mitra (Babinsa, Bhabinkamtibmas Kelurahan Sumber Rejo Balikpapan Tengah).",
+                role: "Menjadi pembawa acara cilik dan penampil pembuka.",
+                learning: "Mengembangkan keberanian mengekspresikan bakat seni secara merdeka dan menumbuhkan rasa cinta yang mendalam terhadap kekayaan budaya nusantara.",
+                links: ["https://www.instagram.com/reel/DcxVCVxpQ2q/"]
+            },
+            {
+                id: 38,
+                name: "Sedalas Jeda Ceria",
+                category: "permainan",
+                categoryLabel: "Permainan Edukasi",
+                desc: "Sesi ice breaking gerak peregangan fisik berirama dan tebak kuis singkat selama 5 menit saat peralihan jam pelajaran yang melelahkan.",
+                good: "Energi positif dan konsentrasi murid pulih seketika setelah ice breaking.",
+                challenge: "Murid terkadang terlalu bersemangat hingga sulit ditenangkan kembali ke pelajaran.",
+                solution: "Menerapkan kode tepuk fokus dan teknik pernapasan menenangkan di akhir sesi.",
+                catur: "Sekolah (Guru Mapel, Guru Kelas, Murid).",
+                role: "Memimpin yel-yel ceria dan mendemonstrasikan gerakan senam otak (brain gym).",
+                learning: "Belajar mengenali batas lelah tubuh serta mampu mengembalikan kesegaran fokus berpikir secara mandiri lewat jeda positif.",
+                links: ["https://www.instagram.com/reel/DeYU3tTJJYX/"]
+            },
+            {
+                id: 39,
+                name: "Sedalas Ramah Anak / Berbagi Kasih Kang Bejo",
+                category: "rukun",
+                categoryLabel: "Rukun Sama Teman",
+                desc: "Deklarasi aksi nyata anti-perundungan serta kunjungan berbagi kebahagiaan dan mewarnai bersama anak-anak di Kampung Kangkung Kang Bejo.",
+                good: "Komitmen anti-perundungan tergaung tegas serta suasana kunjungan hangat penuh tawa ceria anak-anak.",
+                challenge: "Mengarahkan pemahaman batasan bercanda vs bullying dan pengondisian kelompok luar sekolah.",
+                solution: "Sosialisasi komik/bermain peran dan pembagian kelompok pendampingan terstruktur saat pembagian bingkisan.",
+                catur: "Sekolah (Kepala Sekolah, Guru, Tendik), Keluarga (Komite/Wali Murid), Pemerintah/Mitra (Disdikbud Balikpapan / Bhabinkamtibmas), Warga Kang Bejo.",
+                role: "Juru bicara komitmen anti-bullying, pembaca ikrar ramah anak, serta pendamping mewarnai dan membagikan parcel.",
+                learning: "Memahami hak perlindungan anak, berani menolak perundungan, serta menumbuhkan empati dan kepedulian sosial yang tinggi di masyarakat.",
+                links: ["https://www.instagram.com/reel/DfW9oSqTYeg/"]
+            },
+            {
+                id: 40,
+                name: "Senam Bersama Setiap Sabtu",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pelaksanaan senam irama ceria bersama seluruh warga sekolah di halaman utama sebelum jam literasi/ekstrakurikuler dimulai.",
+                good: "Seluruh peserta aktif bergerak diiringi alunan musik ceria.",
+                challenge: "Keterbatasan ruang lapangan untuk menampung seluruh rombel secara leluasa.",
+                solution: "Pengaturan posisi barisan zig-zag antar-tingkatan kelas dipandu guru PJOK.",
+                catur: "Sekolah (Seluruh Guru, Tendik, Murid).",
+                role: "Menjadi instruktur senam di depan barisan memandu gerakan bugar.",
+                learning: "Menyadari pentingnya menjaga kebugaran jasmani secara konsisten demi mendukung semangat dan konsentrasi belajar.",
+                links: ["https://www.instagram.com/reel/Dddj3b1z04f/"]
+            },
+            {
+                id: 41,
+                name: "Shalat Dhuha dan Jumat Imtaq",
+                category: "pembiasaan",
+                categoryLabel: "Pembiasaan Karakter",
+                desc: "Pelaksanaan ibadah salat Dhuha berjamaah dan pengajian bagi murid muslim, serta bimbingan rohani/karakter kasih bagi murid non-muslim setiap Jumat pagi.",
+                good: "Barisan saf ibadah tertib dan suasana keheningan spiritual terjaga baik.",
+                challenge: "Perlunya ruang ibadah tambahan karena kapasitas mushola terbatas.",
+                solution: "Memanfaatkan aula serbaguna sekolah dan membagi sesi pelaksanaan dengan tertib.",
+                catur: "Sekolah (Guru PAI & Budi Pekerti, Pembina Rohani Non-Muslim), Keluarga (Orang Tua pembiasaan salat/ibadah di rumah).",
+                role: "Bertindak sebagai bilal/muadzin cilik dan mengatur kerapian penataan alas ibadah.",
+                learning: "Menguatkan hubungan spiritual kepada Tuhan Yang Maha Esa dan menghormati keberagaman praktik keagamaan sesama warga sekolah.",
+                links: ["https://www.instagram.com/reel/DeJfRpsTt_J/"]
+            },
+            {
+                id: 42,
+                name: "Penyambutan Tamu Rapat K3S Balikpapan Tengah",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Penyambutan hangat dari gerbang sekolah untuk kehadiran para Kepala Sekolah se-Kecamatan Balikpapan Tengah dalam agenda Rapat K3S.",
+                good: "Murid-murid tampil penuh percaya diri, sopan, dan ramah menyambut para tamu dengan budaya 5S.",
+                challenge: "Melatih kerapian dan rasa percaya diri murid saat menyambut pejabat/tamu penting secara langsung.",
+                solution: "Pembiasaan budaya 5S serta pengarahan singkat sebelum penyambutan dimulai.",
+                catur: "Kepala Sekolah SD Negeri/Swasta se-Balikpapan Tengah, Dewan Guru, Sahabat Sekolah Dasar.",
+                role: "Menyambut para Kepala Sekolah dari gerbang dengan sapaan hangat, senyuman, dan sikap santun.",
+                learning: "Belajar menerapkan budaya santun, melatih keberanian berinteraksi, dan menunjukkan apresiasi tinggi kepada penggerak pendidikan.",
+                links: ["https://www.instagram.com/reel/DdbUPVhx6Uc/"]
+            },
+            {
+                id: 43,
+                name: "Kunjungan Kepala BPMP Provinsi Kalimantan Timur",
+                category: "kegiatan",
+                categoryLabel: "Kegiatan Sekolah",
+                desc: "Kunjungan silaturahmi dan peninjauan mutu pendidikan oleh Kepala BPMP Kaltim (Bapak Dr. Jarwoko, M.Pd.) yang disambut hangat dan santun.",
+                good: "Kunjungan berlangsung lancar, hangat, dan sekolah memperoleh motivasi penguatan mutu pendidikan.",
+                challenge: "Kesiapan ekosistem sekolah dan rasa percaya diri murid saat berinteraksi dengan pejabat tinggi daerah.",
+                solution: "Pembiasaan komunikasi santun dan pengkondisian lingkungan sekolah ramah anak.",
+                catur: "Kepala Sekolah, Dewan Guru, Orang Tua, Murid Sahabat Sekolah Dasar, Kepala BPMP Prov. Kaltim.",
+                role: "Menyambut kedatangan Kepala BPMP Kaltim dengan senyuman ceria, sikap santun, dan menunjukkan lingkungan belajar aman.",
+                learning: "Belajar berinteraksi santun dan percaya diri dengan pejabat pendidikan serta merasakan perhatian dari pemangku kepentingan daerah.",
+                links: ["https://www.instagram.com/reel/DdvyO5ETkfp/"]
+            }
+        ];
+
+        // Category Styling Helper (Cheerful Kid Colors)
+        const categoryTheme = {
+            pembiasaan: {
+                badgeBg: "bg-emerald-100 text-emerald-900 border-emerald-300",
+                cardBorder: "border-emerald-300",
+                headerGradient: "bg-gradient-to-r from-emerald-500 to-teal-500",
+                icon: "fa-seedling",
+                emoji: "🌱",
+                accentText: "text-emerald-600"
+            },
+            permainan: {
+                badgeBg: "bg-violet-100 text-violet-900 border-violet-300",
+                cardBorder: "border-violet-300",
+                headerGradient: "bg-gradient-to-r from-violet-500 to-purple-500",
+                icon: "fa-puzzle-piece",
+                emoji: "🎲",
+                accentText: "text-violet-600"
+            },
+            wisata: {
+                badgeBg: "bg-amber-100 text-amber-950 border-amber-300",
+                cardBorder: "border-amber-300",
+                headerGradient: "bg-gradient-to-r from-amber-500 to-orange-500",
+                icon: "fa-map-location-dot",
+                emoji: "🏝️",
+                accentText: "text-amber-600"
+            },
+            kegiatan: {
+                badgeBg: "bg-sky-100 text-sky-900 border-sky-300",
+                cardBorder: "border-sky-300",
+                headerGradient: "bg-gradient-to-r from-sky-500 to-blue-500",
+                icon: "fa-award",
+                emoji: "🏆",
+                accentText: "text-sky-600"
+            },
+            rukun: {
+                badgeBg: "bg-rose-100 text-rose-900 border-rose-300",
+                cardBorder: "border-rose-300",
+                headerGradient: "bg-gradient-to-r from-rose-500 to-pink-500",
+                icon: "fa-heart-handshake",
+                emoji: "🤗",
+                accentText: "text-rose-600"
+            }
+        };
+
+        // Helper: Convert Instagram Reel URL into Embeddable Player URL
+        function getInstagramEmbedUrl(url) {
+            if (!url) return "";
+            const cleanUrl = url.split('?')[0].replace(/\/+$/, '');
+            return `${cleanUrl}/embed/`;
+        }
+
+        let currentMenu = "semua";
+        let openInlineVideoId = null;
+
+        // Switch Active Menu & Update 1-Paragraph Explanation
+        function switchMenu(menuKey) {
+            currentMenu = menuKey;
+
+            // Update Desktop Nav Buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active-tab'));
+            const activeNav = document.getElementById(`nav-${menuKey}`);
+            if (activeNav) activeNav.classList.add('active-tab');
+
+            // Update Mobile Nav Buttons
+            document.querySelectorAll('.mnav-btn').forEach(btn => btn.classList.remove('active-tab'));
+            const activeMNav = document.getElementById(`mnav-${menuKey}`);
+            if (activeMNav) activeMNav.classList.add('active-tab');
+
+            // Update Category Card Tabs
+            document.querySelectorAll('.tab-card').forEach(card => card.classList.remove('active-tab'));
+            const activeCardTab = document.getElementById(`card-tab-${menuKey}`);
+            if (activeCardTab) activeCardTab.classList.add('active-tab');
+
+            // Update 1-Paragraph Banner Content
+            const info = menuDescriptions[menuKey];
+            const iconBox = document.getElementById('menu-icon-box');
+            iconBox.className = `w-16 h-16 sm:w-20 sm:h-20 rounded-3xl flex items-center justify-center shrink-0 text-3xl sm:text-4xl shadow-sm border-2 border-white ${info.colorClass}`;
+            iconBox.innerHTML = `<i class="fa-solid ${info.icon}"></i>`;
+
+            const badge = document.getElementById('menu-badge');
+            badge.className = `text-xs font-display font-bold uppercase tracking-wider px-3.5 py-1 rounded-full ${info.badgeClass}`;
+            badge.textContent = info.badge;
+
+            document.getElementById('menu-title').textContent = info.title;
+            document.getElementById('menu-paragraph').textContent = info.paragraph;
+
+            handleSearchAndFilter();
+        }
+
+        // Filter & Render Cards
+        function handleSearchAndFilter() {
+            const query = document.getElementById('search-input').value.trim().toLowerCase();
+            const caturFilter = document.getElementById('catur-filter').value;
+            const clearBtn = document.getElementById('clear-search-btn');
+
+            if (query.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+
+            const filtered = activitiesData.filter(item => {
+                const matchMenu = currentMenu === 'semua' || item.category === currentMenu;
+                const matchQuery = !query || 
+                    item.name.toLowerCase().includes(query) ||
+                    item.desc.toLowerCase().includes(query) ||
+                    item.role.toLowerCase().includes(query) ||
+                    item.challenge.toLowerCase().includes(query) ||
+                    item.solution.toLowerCase().includes(query) ||
+                    item.learning.toLowerCase().includes(query) ||
+                    item.catur.toLowerCase().includes(query);
+
+                let matchCatur = true;
+                if (caturFilter !== 'all') {
+                    if (caturFilter === 'Masyarakat') {
+                        matchCatur = item.catur.toLowerCase().includes('masyarakat') || 
+                                     item.catur.toLowerCase().includes('pemerintah') || 
+                                     item.catur.toLowerCase().includes('mitra') ||
+                                     item.catur.toLowerCase().includes('bpmp') ||
+                                     item.catur.toLowerCase().includes('kepala sekolah sd');
+                    } else {
+                        matchCatur = item.catur.toLowerCase().includes(caturFilter.toLowerCase());
+                    }
+                }
+
+                return matchMenu && matchQuery && matchCatur;
+            });
+
+            document.getElementById('menu-count-badge').textContent = `🎈 Menampilkan ${filtered.length} Kegiatan Seru`;
+            renderCards(filtered);
+        }
+
+        function renderCards(items) {
+            const grid = document.getElementById('programs-grid');
+            const emptyState = document.getElementById('empty-state');
+
+            if (items.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            grid.innerHTML = items.map(item => {
+                const theme = categoryTheme[item.category];
+                return `
+                <article class="bg-white rounded-3xl border-4 ${theme.cardBorder} shadow-md overflow-hidden flex flex-col justify-between card-hover">
+                    <div class="p-6 space-y-4">
+                        <!-- Top Meta -->
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs font-display font-bold px-3 py-1 rounded-full border-2 ${theme.badgeBg} flex items-center space-x-1.5">
+                                <span>${theme.emoji}</span>
+                                <span>${item.categoryLabel}</span>
+                            </span>
+                            <span class="text-xs font-display font-bold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full border border-slate-200">No. ${String(item.id).padStart(2, '0')}</span>
+                        </div>
+
+                        <!-- Title & Short Description -->
+                        <div>
+                            <h4 class="font-display font-bold text-lg sm:text-xl text-slate-900 leading-snug hover:text-sky-600 transition-colors cursor-pointer" onclick="openDetailModal(${item.id})">
+                                ${item.name}
+                            </h4>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mt-2 line-clamp-3">
+                                ${item.desc}
+                            </p>
+                        </div>
+
+                        <!-- Peran Murid Sahabat SD Highlight -->
+                        <div class="bg-amber-50 border-2 border-amber-200 rounded-2xl p-3.5">
+                            <div class="text-xs font-display font-bold text-amber-900 flex items-center mb-1">
+                                <span class="mr-1.5">🦸</span> Peran Murid Sahabat SD:
+                            </div>
+                            <p class="text-xs text-slate-700 font-medium leading-relaxed">
+                                ${item.role}
+                            </p>
+                        </div>
+
+                        <!-- Tantangan & Solusi Preview -->
+                        <div class="space-y-1.5 text-xs border-t-2 border-dashed border-slate-100 pt-3">
+                            <div class="flex items-start space-x-2">
+                                <span class="shrink-0">✅</span>
+                                <span class="text-slate-600 line-clamp-2"><strong>Hal Baik:</strong> ${item.good}</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="shrink-0">💡</span>
+                                <span class="text-slate-600 line-clamp-2"><strong>Solusi Cerdas:</strong> ${item.solution}</span>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible Inline Video Preview Container right inside the card -->
+                        <div id="inline-player-${item.id}" class="hidden pt-2">
+                            <div class="bg-slate-900 rounded-2xl overflow-hidden border-2 border-rose-400 shadow-inner">
+                                <div class="bg-rose-500 text-white text-xs font-display font-bold px-3 py-1.5 flex items-center justify-between">
+                                    <span>🎬 Pratinjau Langsung di Kartu</span>
+                                    <button onclick="toggleInlineVideo(${item.id})" class="bg-white/20 hover:bg-white/30 px-2 py-0.5 rounded text-[11px]">Tutup ✖</button>
+                                </div>
+                                <iframe 
+                                    id="inline-iframe-${item.id}"
+                                    src="" 
+                                    class="w-full h-[380px] border-0 bg-white"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                    allowfullscreen
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer Actions (In-Web Video Preview without New Tab!) -->
+                    <div class="px-5 py-4 bg-gradient-to-r from-amber-50/80 to-sky-50/80 border-t-2 border-slate-100 flex flex-wrap items-center justify-between gap-2">
+                        <button onclick="openDetailModal(${item.id})" class="text-xs font-display font-bold text-sky-700 hover:text-sky-900 bg-white px-3 py-2 rounded-xl border border-sky-200 shadow-sm flex items-center space-x-1.5">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Baca Cerita</span>
+                        </button>
+
+                        <div class="flex items-center flex-wrap gap-1.5">
+                            <button onclick="toggleInlineVideo(${item.id}, 0)" class="btn-3d bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-display font-bold px-3 py-2 rounded-xl border border-amber-500 flex items-center space-x-1" title="Putar langsung di kartu ini">
+                                <span>▶️</span>
+                                <span>Putar di Sini</span>
+                            </button>
+                            ${item.links.map((url, idx) => `
+                                <button onclick="openVideoModal(${item.id}, ${idx})" class="btn-3d bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white text-xs font-display font-bold px-3 py-2 rounded-xl border border-rose-600 flex items-center space-x-1" title="Buka Pratinjau Layar Bioskop Cilik">
+                                    <span>🍿</span>
+                                    <span>${item.links.length > 1 ? 'Video ' + (idx + 1) : 'Layar Bioskop'}</span>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                </article>
+                `;
+            }).join('');
+        }
+
+        // Toggle Inline Video Player directly inside a Card
+        function toggleInlineVideo(id, reelIndex = 0) {
+            const container = document.getElementById(`inline-player-${id}`);
+            const iframe = document.getElementById(`inline-iframe-${id}`);
+            const item = activitiesData.find(a => a.id === id);
+            if (!container || !iframe || !item) return;
+
+            if (container.classList.contains('hidden')) {
+                // Close any other open inline player first so audio doesn't overlap
+                if (openInlineVideoId && openInlineVideoId !== id) {
+                    const prevContainer = document.getElementById(`inline-player-${openInlineVideoId}`);
+                    const prevIframe = document.getElementById(`inline-iframe-${openInlineVideoId}`);
+                    if (prevContainer && prevIframe) {
+                        prevContainer.classList.add('hidden');
+                        prevIframe.src = '';
+                    }
+                }
+                iframe.src = getInstagramEmbedUrl(item.links[reelIndex]);
+                container.classList.remove('hidden');
+                openInlineVideoId = id;
+            } else {
+                container.classList.add('hidden');
+                iframe.src = '';
+                openInlineVideoId = null;
+            }
+        }
+
+        // Open Dedicated In-Web Cinema Video Preview Modal
+        function openVideoModal(id, reelIndex = 0) {
+            const item = activitiesData.find(a => a.id === id);
+            if (!item) return;
+
+            const theme = categoryTheme[item.category];
+            document.getElementById('cinema-badge').textContent = `${theme.emoji} ${item.categoryLabel} • Kegiatan #${String(item.id).padStart(2, '0')}`;
+            document.getElementById('cinema-title').textContent = item.name;
+            document.getElementById('cinema-desc').textContent = item.desc;
+            document.getElementById('cinema-role').textContent = item.role;
+            document.getElementById('cinema-learning').textContent = `"${item.learning}"`;
+
+            const embedUrl = getInstagramEmbedUrl(item.links[reelIndex]);
+            document.getElementById('cinema-iframe').src = embedUrl;
+            document.getElementById('cinema-external-link').href = item.links[reelIndex];
+
+            const detailBtn = document.getElementById('cinema-detail-btn');
+            detailBtn.onclick = function() {
+                closeVideoModal();
+                openDetailModal(item.id);
+            };
+
+            // Handle multiple reels switcher (e.g., #19 JEJAK RISTA or #23 Lomba Cosplay)
+            const switcherBox = document.getElementById('cinema-switcher-box');
+            const switcherBtns = document.getElementById('cinema-reel-buttons');
+            if (item.links.length > 1) {
+                switcherBox.classList.remove('hidden');
+                switcherBtns.innerHTML = item.links.map((u, idx) => `
+                    <button onclick="openVideoModal(${item.id}, ${idx})" class="px-3 py-1.5 rounded-xl text-xs font-display font-bold border-2 transition-all ${idx === reelIndex ? 'bg-rose-500 text-white border-rose-600 shadow-sm' : 'bg-amber-50 text-slate-700 border-amber-200 hover:bg-amber-100'}">
+                        🎬 Video Bagian ${idx + 1}
+                    </button>
+                `).join('');
+            } else {
+                switcherBox.classList.add('hidden');
+                switcherBtns.innerHTML = '';
+            }
+
+            document.getElementById('video-preview-modal').classList.remove('hidden');
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-preview-modal');
+            const iframe = document.getElementById('cinema-iframe');
+            if (iframe) iframe.src = '';
+            modal.classList.add('hidden');
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            handleSearchAndFilter();
+        }
+
+        function resetAllFilters() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('catur-filter').value = 'all';
+            switchMenu('semua');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('mobile-menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-bars text-lg';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-lg';
+            }
+        }
+
+        // Detail Modal Functions (with Embedded In-Page Video Player)
+        function openDetailModal(id, reelIndex = 0) {
+            const item = activitiesData.find(a => a.id === id);
+            if (!item) return;
+
+            const theme = categoryTheme[item.category];
+            document.getElementById('modal-header-bg').className = `p-6 sm:p-7 text-white relative ${theme.headerGradient}`;
+            document.getElementById('modal-no-badge').textContent = `Kegiatan #${String(item.id).padStart(2, '0')}`;
+            document.getElementById('modal-cat-badge').textContent = `${theme.emoji} ${item.categoryLabel}`;
+            document.getElementById('modal-title').textContent = item.name;
+            document.getElementById('modal-desc').textContent = item.desc;
+            document.getElementById('modal-good').textContent = item.good;
+            document.getElementById('modal-role').textContent = item.role;
+            document.getElementById('modal-challenge').textContent = item.challenge;
+            document.getElementById('modal-solution').textContent = item.solution;
+            document.getElementById('modal-learning').textContent = `"${item.learning}"`;
+            document.getElementById('modal-catur').textContent = item.catur;
+
+            // Load Embedded Video directly inside Detail Modal
+            const videoIframe = document.getElementById('modal-video-iframe');
+            if (videoIframe) {
+                videoIframe.src = getInstagramEmbedUrl(item.links[reelIndex]);
+            }
+
+            // Switcher if multiple reels exist
+            const switcher = document.getElementById('modal-reel-switcher');
+            if (switcher) {
+                if (item.links.length > 1) {
+                    switcher.innerHTML = item.links.map((url, idx) => `
+                        <button onclick="openDetailModal(${item.id}, ${idx})" class="px-3 py-1 rounded-xl text-xs font-display font-bold border transition-all ${idx === reelIndex ? 'bg-rose-500 text-white border-rose-600' : 'bg-white text-slate-700 border-slate-200 hover:bg-rose-50'}">
+                            🎬 Reel ${idx + 1}
+                        </button>
+                    `).join('');
+                } else {
+                    switcher.innerHTML = `<span class="text-xs font-display font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">✅ Siap Diputar di Sini</span>`;
+                }
+            }
+
+            const linksContainer = document.getElementById('modal-links');
+            linksContainer.innerHTML = item.links.map((url, idx) => `
+                <button onclick="closeDetailModal(); openVideoModal(${item.id}, ${idx});" class="btn-3d bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 text-slate-950 text-xs font-display font-bold px-4 py-2.5 rounded-xl border border-amber-500 transition-all flex items-center justify-center space-x-2">
+                    <span>🍿</span>
+                    <span>Perbesar ke Mode Bioskop ${item.links.length > 1 ? (idx + 1) : ''}</span>
+                </button>
+            `).join('');
+
+            document.getElementById('detail-modal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            const videoIframe = document.getElementById('modal-video-iframe');
+            if (videoIframe) videoIframe.src = '';
+            document.getElementById('detail-modal').classList.add('hidden');
+        }
+
+        // Catur Pusat Modal Functions
+        function openCaturModal() {
+            document.getElementById('catur-modal').classList.remove('hidden');
+        }
+        function closeCaturModal() {
+            document.getElementById('catur-modal').classList.add('hidden');
+        }
+
+        // Interactive Quiz Simulation Data & Functions
+        const quizQuestions = [
+            {
+                q: "Saat kegiatan Bulan Imunisasi Anak Sekolah (BIAS) SEDALAS, ada adik kelas 1 yang merasa cemas dan takut jarum suntik. Apa peran yang dilakukan murid Sahabat SD?",
+                options: [
+                    "Menjadi duta penenang adik kelas di ruang tunggu, mendampingi secara suportif, dan membagikan stiker keberanian anak hebat.",
+                    "Meminta adik kelas pulang ke rumah agar tidak menangis di kelas.",
+                    "Menyerahkan sepenuhnya kepada petugas kesehatan tanpa mendampingi."
+                ],
+                correct: 0,
+                feedback: "Tepat sekali! Pada kegiatan BIAS SEDALAS (#03), Sahabat SD berperan sebagai duta penenang di ruang tunggu dan membagikan stiker keberanian."
+            },
+            {
+                q: "Dalam kegiatan JEJAK RISTA (#19), destinasi ramah anak dan ruang terbuka hijau mana saja di Kota Balikpapan yang dijelajahi dalam vlog edukasi?",
+                options: [
+                    "KWPLH, Penangkaran Buaya, dan Mangrove Center.",
+                    "Mall perbelanjaan dan bioskop kota.",
+                    "Luar provinsi Kalimantan Timur."
+                ],
+                correct: 0,
+                feedback: "Benar! JEJAK RISTA mengenalkan landmark ramah anak di Kota Balikpapan seperti KWPLH, Penangkaran Buaya, dan Mangrove Center."
+            },
+            {
+                q: "Pada kegiatan Congrats Gift Card (#11), sebagian murid khawatir kartu apresiasinya tidak dibalas oleh teman lain. Apa solusi kreatif yang diterapkan Sahabat SD?",
+                options: [
+                    "Menyiapkan kotak surat apresiasi bersama di kelas untuk memastikan setiap murid menerima kartu apresiasi.",
+                    "Mewajibkan hanya ketua kelas saja yang menulis kartu.",
+                    "Menghentikan kegiatan pembuatan kartu apresiasi."
+                ],
+                correct: 0,
+                feedback: "Hebat! Sahabat SD mengorganisir kotak apresiasi kelas agar seluruh teman merasakan kebahagiaan dihargai secara merata."
+            },
+            {
+                q: "Bagaimana solusi SEDALAS saat ruang kelas terasa sempit untuk simulasi lintasan halte pada permainan BUS AMAN Game (#04)?",
+                options: [
+                    "Memanfaatkan koridor sekolah bertingkat sebagai denah jalur miniatur jalan raya dan mengatur giliran tertib.",
+                    "Membatalkan simulasi dan hanya membaca buku teks.",
+                    "Bermain di jalan raya umum tanpa pengawasan."
+                ],
+                correct: 0,
+                feedback: "Luar biasa! Koridor sekolah bertingkat dimanfaatkan sebagai jalur miniatur jalan raya dilengkapi Papan Interaktif Digital."
+            }
+        ];
+
+        let currentQuizIndex = 0;
+        let quizScore = 0;
+
+        function openQuizModal() {
+            currentQuizIndex = 0;
+            quizScore = 0;
+            renderQuizQuestion();
+            document.getElementById('quiz-modal').classList.remove('hidden');
+        }
+
+        function closeQuizModal() {
+            document.getElementById('quiz-modal').classList.add('hidden');
+        }
+
+        function renderQuizQuestion() {
+            const body = document.getElementById('quiz-body');
+            if (currentQuizIndex >= quizQuestions.length) {
+                body.innerHTML = `
+                    <div class="text-center py-4 space-y-4">
+                        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-2xl text-slate-900">Luar Biasa, Sahabat SEDALAS!</h4>
+                        <p class="text-slate-600 text-sm">Skor Pemahamanmu: <strong class="text-emerald-600 text-lg">${quizScore} / ${quizQuestions.length}</strong></p>
+                        <p class="text-xs text-slate-500 max-w-md mx-auto">Kamu telah memahami bagaimana murid Sahabat Sekolah Dasar SDN 011 Balikpapan Tengah menjadi teladan karakter, pelopor kerukunan, dan duta kearifan lokal!</p>
+                        <div class="pt-2 flex justify-center gap-3">
+                            <button onclick="openQuizModal()" class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs px-5 py-2.5 rounded-xl">Main Lagi</button>
+                            <button onclick="closeQuizModal()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs px-5 py-2.5 rounded-xl">Selesai</button>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            const item = quizQuestions[currentQuizIndex];
+            body.innerHTML = `
+                <div class="flex items-center justify-between text-xs font-bold text-slate-400">
+                    <span>TANTANGAN ${currentQuizIndex + 1} DARI ${quizQuestions.length}</span>
+                    <span>Skor: ${quizScore}</span>
+                </div>
+                <p class="font-bold text-slate-800 text-base leading-relaxed">${item.q}</p>
+                <div class="space-y-2.5" id="quiz-options">
+                    ${item.options.map((opt, idx) => `
+                        <button onclick="selectQuizAnswer(${idx})" class="w-full text-left p-3.5 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 text-xs sm:text-sm font-medium text-slate-700 transition-all flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 font-bold flex items-center justify-center shrink-0 text-xs">${String.fromCharCode(65 + idx)}</span>
+                            <span>${opt}</span>
+                        </button>
+                    `).join('')}
+                </div>
+                <div id="quiz-feedback" class="hidden p-4 rounded-2xl text-xs sm:text-sm"></div>
+            `;
+        }
+
+        function selectQuizAnswer(selectedIdx) {
+            const item = quizQuestions[currentQuizIndex];
+            const feedbackEl = document.getElementById('quiz-feedback');
+            const optionsContainer = document.getElementById('quiz-options');
+
+            // Disable further clicks
+            Array.from(optionsContainer.children).forEach((btn, idx) => {
+                btn.disabled = true;
+                if (idx === item.correct) {
+                    btn.className = "w-full text-left p-3.5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-xs sm:text-sm font-bold text-emerald-900 flex items-start space-x-3";
+                } else if (idx === selectedIdx) {
+                    btn.className = "w-full text-left p-3.5 rounded-2xl border-2 border-rose-400 bg-rose-50 text-xs sm:text-sm font-medium text-rose-900 flex items-start space-x-3";
+                }
+            });
+
+            if (selectedIdx === item.correct) {
+                quizScore++;
+                feedbackEl.className = "p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs sm:text-sm space-y-2";
+                feedbackEl.innerHTML = `<div><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> <strong>Jawaban Tepat!</strong> ${item.feedback}</div>`;
+            } else {
+                feedbackEl.className = "p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm space-y-2";
+                feedbackEl.innerHTML = `<div><i class="fa-solid fa-circle-info text-amber-600 mr-1"></i> <strong>Info SEDALAS:</strong> ${item.feedback}</div>`;
+            }
+
+            feedbackEl.innerHTML += `
+                <div class="pt-1 text-right">
+                    <button onclick="nextQuizQuestion()" class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-4 py-2 rounded-xl">
+                        Lanjut <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            `;
+            feedbackEl.classList.remove('hidden');
+        }
+
+        function nextQuizQuestion() {
+            currentQuizIndex++;
+            renderQuizQuestion();
+        }
+
+        // Close modals on Escape key or backdrop click
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeDetailModal();
+                closeVideoModal();
+                closeQuizModal();
+                closeCaturModal();
+            }
+        });
+
+        // Initial Render on Load
+        window.onload = function() {
+            switchMenu('semua');
+        };
+    </script>
+</body>
+</html>
